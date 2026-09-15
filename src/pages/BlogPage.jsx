@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { blogPosts } from '../data/blogPosts';
-import { BookOpen, Clock, ArrowRight, X, Calendar, Share2, Check, Tag } from 'lucide-react';
+import { seoArticles } from '../data/seoArticlesData';
+import { BookOpen, Clock, ArrowRight, X, Calendar, Share2, Check, Sparkles, ChevronDown, HelpCircle } from 'lucide-react';
 import { LinkedInIcon } from '../components/LinkedInIcons';
 
 export const BlogPage = ({ lang, t, onOpenModal, onNavigate }) => {
@@ -8,14 +9,18 @@ export const BlogPage = ({ lang, t, onOpenModal, onNavigate }) => {
   const [selectedPost, setSelectedPost] = useState(null);
   const [copied, setCopied] = useState(false);
   const [activeCategory, setActiveCategory] = useState('ALL');
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  // Combine original blog posts with rich SEO/GEO architecture articles
+  const allArticles = [...seoArticles, ...blogPosts];
 
   const categories = isTr 
-    ? ['TÜMÜ', 'Outreach & AI', 'Profil Optimizasyonu', 'LinkedIn Ads & ABM', 'Company Page']
-    : ['ALL', 'Outreach & AI', 'Profile Optimization', 'LinkedIn Ads & ABM', 'Company Page'];
+    ? ['TÜMÜ', 'B2B Marketing', 'Lead Generation', 'Outreach & Mesaj', 'Profil Optimizasyonu', 'LinkedIn Ads', 'ABM & Reklam', 'Company Page']
+    : ['ALL', 'B2B Marketing', 'Lead Generation', 'Outreach & Messaging', 'Profile Optimization', 'LinkedIn Ads', 'ABM & Advertising', 'Company Page'];
 
   const filteredPosts = activeCategory === 'ALL' || activeCategory === 'TÜMÜ'
-    ? blogPosts
-    : blogPosts.filter(p => {
+    ? allArticles
+    : allArticles.filter(p => {
         const cat = isTr ? p.categoryTr : p.categoryEn;
         return cat.toLowerCase().includes(activeCategory.toLowerCase());
       });
@@ -183,10 +188,46 @@ export const BlogPage = ({ lang, t, onOpenModal, onNavigate }) => {
             </div>
 
             <div className="prose prose-sm sm:prose max-w-none text-navy/90 leading-relaxed space-y-4 mb-8">
-              <div className="whitespace-pre-line">
+              <div className="whitespace-pre-line text-sm sm:text-base">
                 {isTr ? selectedPost.contentTr : selectedPost.contentEn}
               </div>
             </div>
+
+            {/* GEO Structured Answers (AI Search & Executive FAQs) */}
+            {((isTr ? selectedPost.geoFaqTr : selectedPost.geoFaqEn) && (isTr ? selectedPost.geoFaqTr : selectedPost.geoFaqEn).length > 0) && (
+              <div className="mb-8 pt-6 border-t border-slate-200">
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-7 h-7 rounded-lg bg-blue-100/80 text-overseas flex items-center justify-center font-bold text-xs">
+                    <HelpCircle className="w-4 h-4" />
+                  </div>
+                  <h4 className="font-heading font-extrabold text-base text-navy">
+                    {isTr ? 'Sıkça Sorulan Sorular & GEO Bilgi Özeti' : 'Frequently Asked Questions & GEO Knowledge Hub'}
+                  </h4>
+                </div>
+
+                <div className="space-y-3">
+                  {(isTr ? selectedPost.geoFaqTr : selectedPost.geoFaqEn).map((faq, fIdx) => {
+                    const isOpen = openFaqIndex === fIdx;
+                    return (
+                      <div key={fIdx} className="glass-card rounded-2xl border border-slate-200/80 overflow-hidden">
+                        <button
+                          onClick={() => setOpenFaqIndex(isOpen ? null : fIdx)}
+                          className="w-full p-4 text-left flex items-center justify-between gap-4 font-heading font-bold text-xs sm:text-sm text-navy hover:text-overseas transition-colors"
+                        >
+                          <span>{faq.q}</span>
+                          <ChevronDown className={`w-4 h-4 text-overseas shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+                        </button>
+                        {isOpen && (
+                          <div className="px-4 pb-4 text-xs sm:text-sm text-content-secondary leading-relaxed border-t border-slate-100 pt-2.5">
+                            {faq.a}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
 
             <div className="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
               <button
