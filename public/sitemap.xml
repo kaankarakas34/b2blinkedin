@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
@@ -91,6 +91,26 @@
     <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Hedef Kitle & Karar Verici Personaları (CEO, CMO, Satın Alma) -->
+  <url>
+    <loc>https://b2blinkedin.overseas.marketing/#persona</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#persona"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#persona"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Karşılaştırma & BOFU Matrisi (LinkedIn Ads vs Google, Outreach vs Email) -->
+  <url>
+    <loc>https://b2blinkedin.overseas.marketing/#comparison</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#comparison"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#comparison"/>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 
 </urlset>

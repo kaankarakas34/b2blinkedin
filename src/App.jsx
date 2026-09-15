@@ -14,6 +14,8 @@ import { ContentPage } from './pages/ContentPage';
 import { BlogPage } from './pages/BlogPage';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
+import { PersonaPage } from './pages/PersonaPage';
+import { ComparisonPage } from './pages/ComparisonPage';
 
 export default function App() {
   const [lang, setLang] = useState(() => {
@@ -25,7 +27,7 @@ export default function App() {
 
   const [currentPage, setCurrentPage] = useState(() => {
     const hash = window.location.hash.replace('#', '');
-    if (['home', 'outreach', 'ads', 'profile', 'company', 'content', 'blog', 'about', 'contact'].includes(hash)) {
+    if (['home', 'outreach', 'ads', 'profile', 'company', 'content', 'blog', 'about', 'contact', 'persona', 'comparison'].includes(hash)) {
       return hash;
     }
     return 'home';
@@ -52,7 +54,7 @@ export default function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '');
-      if (['home', 'outreach', 'ads', 'profile', 'company', 'content', 'blog', 'about', 'contact'].includes(hash)) {
+      if (['home', 'outreach', 'ads', 'profile', 'company', 'content', 'blog', 'about', 'contact', 'persona', 'comparison'].includes(hash)) {
         setCurrentPage(hash);
       } else {
         setCurrentPage('home');
@@ -140,6 +142,22 @@ export default function App() {
         desc: isTr 
           ? 'Hedef hesap listenizi ve sektörünüze özel LinkedIn müşteri kazanım planınızı 24 saat içinde çıkaralım. Hemen strateji talebi iletin.' 
           : 'Request your customized target-account audit and B2B LinkedIn pipeline roadmap within 24 hours. Contact our strategists.'
+      },
+      persona: {
+        title: isTr
+          ? 'LinkedIn Karar Verici & Persona Stratejisi (CEO, CMO, Satın Alma) | B2B'
+          : 'B2B LinkedIn Persona Targeting (CEO, CMO, Procurement) | Overseas',
+        desc: isTr
+          ? 'LinkedIn\'de CEO, CMO ve Satın Alma Direktörlerine özel mesajlaşma ve Sales Navigator filtre stratejileri.'
+          : 'Role-specific LinkedIn outreach and Sales Navigator targeting matrices for CEOs, CMOs, and Procurement Directors.'
+      },
+      comparison: {
+        title: isTr
+          ? 'B2B Karar Matrisi: LinkedIn Ads vs Google Ads & Outreach vs Cold Email'
+          : 'B2B Strategy Matrix: LinkedIn Ads vs Google Ads & Outreach vs Cold Email',
+        desc: isTr
+          ? 'B2B kanal karşılaştırmaları, maliyet analizleri ve hibrit müşteri kazanım modelleri.'
+          : 'Detailed comparative analysis of LinkedIn Ads, Google Search, cold email, and account-based marketing.'
       }
     };
 
@@ -180,6 +198,10 @@ export default function App() {
         return <AboutPage lang={lang} t={t} onOpenModal={() => setIsModalOpen(true)} onNavigate={navigate} />;
       case 'contact':
         return <ContactPage lang={lang} t={t} onOpenModal={() => setIsModalOpen(true)} onNavigate={navigate} />;
+      case 'persona':
+        return <PersonaPage lang={lang} t={t} onOpenModal={() => setIsModalOpen(true)} onNavigate={navigate} />;
+      case 'comparison':
+        return <ComparisonPage lang={lang} t={t} onOpenModal={() => setIsModalOpen(true)} onNavigate={navigate} />;
       case 'home':
       default:
         return <HomePage lang={lang} t={t} onOpenModal={() => setIsModalOpen(true)} onNavigate={navigate} />;

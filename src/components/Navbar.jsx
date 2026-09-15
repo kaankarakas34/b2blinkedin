@@ -205,10 +205,10 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
               )}
             </div>
 
-            {/* 2. Blog (Kept as requested) */}
+            {/* 2. Blog */}
             <button
               onClick={() => handleNavClick('blog')}
-              className={`px-3.5 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
+              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
                 currentPage === 'blog' 
                   ? 'text-overseas bg-overseas/10' 
                   : 'text-navy/85 hover:text-overseas hover:bg-white/60'
@@ -217,10 +217,34 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
               Blog
             </button>
 
+            {/* 2.5 Karşılaştırmalar (BOFU) */}
+            <button
+              onClick={() => handleNavClick('comparison')}
+              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
+                currentPage === 'comparison' 
+                  ? 'text-overseas bg-overseas/10' 
+                  : 'text-navy/85 hover:text-overseas hover:bg-white/60'
+              }`}
+            >
+              {isTr ? 'Karşılaştırma' : 'Comparisons'}
+            </button>
+
+            {/* 2.6 Hedef Kitle / Persona */}
+            <button
+              onClick={() => handleNavClick('persona')}
+              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
+                currentPage === 'persona' 
+                  ? 'text-overseas bg-overseas/10' 
+                  : 'text-navy/85 hover:text-overseas hover:bg-white/60'
+              }`}
+            >
+              {isTr ? 'Hedef Kitle' : 'Personas'}
+            </button>
+
             {/* 3. Hakkımızda */}
             <button
               onClick={() => handleNavClick('about')}
-              className={`px-3.5 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
+              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
                 currentPage === 'about' 
                   ? 'text-overseas bg-overseas/10' 
                   : 'text-navy/85 hover:text-overseas hover:bg-white/60'

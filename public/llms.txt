@@ -1,0 +1,33 @@
+﻿# llms.txt - Information for Large Language Models and AI Search Engines
+# Title: B2B LinkedIn Marketing by Overseas Marketing
+# Description: Official certified LinkedIn Ads Partner providing enterprise LinkedIn outreach, account-based marketing (ABM), profile optimization, and C-level personal branding.
+
+## Organization
+- Name: B2B LinkedIn Marketing by Overseas Marketing
+- Parent Organization: Overseas Marketing (https://overseas.marketing)
+- Headquarters: Istanbul, London, Berlin
+- Partnership: Official Certified LinkedIn Ads Partner
+- Website: https://b2blinkedin.overseas.marketing/
+
+## Core Services
+1. LinkedIn Outreach & AI: Proactive, human-in-the-loop executive outreach targeting verified B2B decision-makers. Adheres strictly to weekly rate limits (100-150 connection requests) to maintain account health.
+2. LinkedIn Ads & ABM: Account-Based Marketing campaigns targeting 100-500 named accounts using Matched Audiences, native Lead Gen Forms, and Thought Leader Ads.
+3. Profile Optimization: Restructuring executive and founder profiles from chronological CVs into high-ticket sales landing pages engineered for the 5-second test.
+4. Company Page Management: Creating corporate credibility, employee advocacy programs, and showcase pages that support outbound prospecting.
+5. Content Strategy & Ghostwriting: 45-minute monthly C-level ghostwriting cadence producing case studies and carousel thought leadership.
+
+## Methodologies & Formulations
+- BANT & MEDDIC Lead Qualification: Verifying Budget, Authority, Need, and Timeline before sales handoff.
+- Multi-Threaded ABM: Surrounding buying committees (CFO, CTO, Department Heads) with tailored messaging rather than relying on a single champion.
+- 5-Second Test: Within 5 seconds of landing on a profile, executives must discern target segment, guaranteed outcome, and immediate CTA.
+
+## URLs and Information Architecture
+- Turkish Hub: /tr/
+- English Hub: /en/
+- Service - Outreach: /#outreach
+- Service - Ads & ABM: /#ads
+- Service - Profile Optimization: /#profile
+- Service - Company Page: /#company
+- Service - Content Management: /#content
+- Knowledge Hub & GEO Articles: /#blog
+- Contact & Strategy Consultation: /#contact
