@@ -2,8 +2,9 @@ import React from 'react';
 import { ShieldCheck, MapPin, Mail, Globe, ArrowUpRight } from 'lucide-react';
 import { LinkedInIcon } from './LinkedInIcons';
 import { BrandLogo } from './BrandLogo';
+import { getRouteUrl } from '../utils/routes';
 
-export const Footer = ({ t, onOpenModal }) => {
+export const Footer = ({ t, lang = 'tr', onOpenModal, onNavigate }) => {
   return (
     <footer id="contact" className="bg-navy text-white pt-16 pb-12 border-t border-white/10 relative overflow-hidden">
       
@@ -28,6 +29,8 @@ export const Footer = ({ t, onOpenModal }) => {
                 <img 
                   src="/linkedin_ads_partner.png" 
                   alt="LinkedIn Ads Partner - Overseas Marketing" 
+                  width="300"
+                  height="134"
                   className="h-7 w-auto object-contain block"
                 />
               </div>
@@ -41,12 +44,12 @@ export const Footer = ({ t, onOpenModal }) => {
               </div>
             </div>
 
-            <div>
-              <a 
-                href="https://www.overseas.marketing" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-white transition-colors"
+            <div className="pt-1">
+              <a
+                href="https://overseas.marketing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-slate-400 hover:text-white inline-flex items-center gap-1 transition-colors"
               >
                 <span>Overseas Marketing Resmi Web Sitesi</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
@@ -60,11 +63,11 @@ export const Footer = ({ t, onOpenModal }) => {
               {t.footer.servicesTitle}
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
-              <li><button onClick={() => onNavigate('outreach')} className="hover:text-white transition-colors text-left">AI LinkedIn Outreach</button></li>
-              <li><button onClick={() => onNavigate('profile')} className="hover:text-white transition-colors text-left">Profil Optimizasyonu</button></li>
-              <li><button onClick={() => onNavigate('company')} className="hover:text-white transition-colors text-left">Company Page Yönetimi</button></li>
-              <li><button onClick={() => onNavigate('content')} className="hover:text-white transition-colors text-left">İçerik Yönetimi</button></li>
-              <li><button onClick={() => onNavigate('ads')} className="hover:text-white transition-colors text-left">LinkedIn Ads & ABM</button></li>
+              <li><a href={getRouteUrl('outreach', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('outreach'); }} className="hover:text-white transition-colors block">AI LinkedIn Outreach</a></li>
+              <li><a href={getRouteUrl('profile', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('profile'); }} className="hover:text-white transition-colors block">Profil Optimizasyonu</a></li>
+              <li><a href={getRouteUrl('company', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('company'); }} className="hover:text-white transition-colors block">Company Page Yönetimi</a></li>
+              <li><a href={getRouteUrl('content', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('content'); }} className="hover:text-white transition-colors block">İçerik Yönetimi</a></li>
+              <li><a href={getRouteUrl('ads', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('ads'); }} className="hover:text-white transition-colors block">LinkedIn Ads & ABM</a></li>
             </ul>
           </div>
 
@@ -74,11 +77,11 @@ export const Footer = ({ t, onOpenModal }) => {
               {t.footer.solutionsTitle}
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
-              <li><button onClick={() => onNavigate('home')} className="hover:text-white transition-colors text-left">SaaS & Kurumsal Yazılım</button></li>
-              <li><button onClick={() => onNavigate('home')} className="hover:text-white transition-colors text-left">Endüstriyel Üretim</button></li>
-              <li><button onClick={() => onNavigate('home')} className="hover:text-white transition-colors text-left">B2B Sağlık & Medikal</button></li>
-              <li><button onClick={() => onNavigate('home')} className="hover:text-white transition-colors text-left">Yönetim Danışmanlığı</button></li>
-              <li><button onClick={() => onNavigate('blog')} className="hover:text-white transition-colors text-left">LinkedIn B2B Blog</button></li>
+              <li><a href={getRouteUrl('home', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('home'); }} className="hover:text-white transition-colors block">SaaS & Kurumsal Yazılım</a></li>
+              <li><a href={getRouteUrl('persona', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('persona'); }} className="hover:text-white transition-colors block">{lang === 'tr' ? 'Karar Verici Personaları' : 'B2B Personas'}</a></li>
+              <li><a href={getRouteUrl('comparison', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('comparison'); }} className="hover:text-white transition-colors block">{lang === 'tr' ? 'B2B Karşılaştırma Matrisi' : 'Comparisons'}</a></li>
+              <li><a href={getRouteUrl('about', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }} className="hover:text-white transition-colors block">{lang === 'tr' ? 'Hakkımızda' : 'About'}</a></li>
+              <li><a href={getRouteUrl('blog', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog'); }} className="hover:text-white transition-colors block">LinkedIn B2B Blog</a></li>
             </ul>
           </div>
 

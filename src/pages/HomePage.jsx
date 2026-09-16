@@ -30,8 +30,8 @@ export const HomePage = ({ lang, t, onOpenModal, onNavigate }) => {
       <MetricsAndFit t={t} onOpenModal={onOpenModal} />
       <OnboardingAndHumanAI t={t} onOpenModal={onOpenModal} />
       <Calculator t={t} onOpenModal={onOpenModal} />
-      <SolutionsSection lang={lang} t={t} onOpenModal={onOpenModal} />
-      <BlogSection lang={lang} t={t} onOpenModal={onOpenModal} />
+      <SolutionsSection lang={lang} t={t} onOpenModal={onOpenModal} onNavigate={onNavigate} />
+      <BlogSection lang={lang} t={t} onOpenModal={onOpenModal} onNavigate={onNavigate} />
       <AboutSection t={t} onOpenModal={onOpenModal} />
       <FAQSection t={t} />
       <CTABanner t={t} onOpenModal={onOpenModal} />

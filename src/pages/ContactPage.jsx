@@ -161,11 +161,13 @@ export const ContactPage = ({ lang, t, onOpenModal, onNavigate }) => {
                   {/* Full Name & Work Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                     <div>
-                      <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                      <label htmlFor="contact-name" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                         {isTr ? 'Adınız ve Soyadınız *' : 'Full Name *'}
                       </label>
                       <input
                         required
+                        id="contact-name"
+                        name="name"
                         type="text"
                         value={pageFormData.name}
                         onChange={(e) => setPageFormData({...pageFormData, name: e.target.value})}
@@ -175,11 +177,13 @@ export const ContactPage = ({ lang, t, onOpenModal, onNavigate }) => {
                     </div>
 
                     <div>
-                      <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                      <label htmlFor="contact-email" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                         {isTr ? 'Kurumsal E-posta *' : 'Work Email *'}
                       </label>
                       <input
                         required
+                        id="contact-email"
+                        name="email"
                         type="email"
                         value={pageFormData.email}
                         onChange={(e) => setPageFormData({...pageFormData, email: e.target.value})}
@@ -192,10 +196,12 @@ export const ContactPage = ({ lang, t, onOpenModal, onNavigate }) => {
                   {/* Phone & Company */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                     <div>
-                      <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                      <label htmlFor="contact-phone" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                         {isTr ? 'Telefon Numarası' : 'Phone Number'}
                       </label>
                       <input
+                        id="contact-phone"
+                        name="phone"
                         type="tel"
                         value={pageFormData.phone}
                         onChange={(e) => setPageFormData({...pageFormData, phone: e.target.value})}
@@ -205,10 +211,12 @@ export const ContactPage = ({ lang, t, onOpenModal, onNavigate }) => {
                     </div>
 
                     <div>
-                      <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                      <label htmlFor="contact-company" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                         {isTr ? 'Şirket Adı & Web Sitesi' : 'Company Name & Web'}
                       </label>
                       <input
+                        id="contact-company"
+                        name="company"
                         type="text"
                         value={pageFormData.company}
                         onChange={(e) => setPageFormData({...pageFormData, company: e.target.value})}
@@ -221,10 +229,12 @@ export const ContactPage = ({ lang, t, onOpenModal, onNavigate }) => {
                   {/* Sector & Deal Size */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                     <div>
-                      <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                      <label htmlFor="contact-sector" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                         {isTr ? 'Faaliyet / Hedef Sektör' : 'Target Industry'}
                       </label>
                       <input
+                        id="contact-sector"
+                        name="sector"
                         type="text"
                         value={pageFormData.sector}
                         onChange={(e) => setPageFormData({...pageFormData, sector: e.target.value})}
@@ -234,10 +244,12 @@ export const ContactPage = ({ lang, t, onOpenModal, onNavigate }) => {
                     </div>
 
                     <div>
-                      <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                      <label htmlFor="contact-dealsize" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                         {isTr ? 'Hedef Müşteri Büyüklüğü' : 'Deal Magnitude'}
                       </label>
                       <select
+                        id="contact-dealsize"
+                        name="dealSize"
                         value={pageFormData.dealSize}
                         onChange={(e) => setPageFormData({...pageFormData, dealSize: e.target.value})}
                         className="w-full px-3 py-2.5 rounded-xl glass-input text-xs text-navy"
@@ -251,10 +263,12 @@ export const ContactPage = ({ lang, t, onOpenModal, onNavigate }) => {
 
                   {/* Message */}
                   <div>
-                    <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                    <label htmlFor="contact-message" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                       {isTr ? 'Görüşmek İstediğiniz Konu veya İhtiyacınız' : 'Your Specific Objectives / Project Scope'}
                     </label>
                     <textarea
+                      id="contact-message"
+                      name="message"
                       rows="3"
                       value={pageFormData.message}
                       onChange={(e) => setPageFormData({...pageFormData, message: e.target.value})}

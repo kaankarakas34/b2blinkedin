@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ArrowRight, ChevronDown, Sparkles, Send, Target, UserCheck, Building2, FileText, ShieldCheck } from 'lucide-react';
 import { LinkedInIcon } from './LinkedInIcons';
 import { BrandLogo } from './BrandLogo';
+import { getRouteUrl } from '../utils/routes';
 
 export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -89,9 +90,13 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
         <div className="flex items-center justify-between">
           
           {/* Brand Logo */}
-          <button onClick={() => handleNavClick('home')} className="flex items-center group cursor-pointer text-left">
+          <a 
+            href={isTr ? "/" : "/en/"} 
+            onClick={(e) => { e.preventDefault(); handleNavClick('home'); }} 
+            className="flex items-center group cursor-pointer text-left"
+          >
             <BrandLogo variant="light" size="md" />
-          </button>
+          </a>
 
           {/* Desktop Navigation Links (Clean, Uncluttered, with Mega Menu) */}
           <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
@@ -133,11 +138,16 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
                         {servicesList.map((srv) => {
                           const IconComponent = srv.icon;
                           const isCurrent = currentPage === srv.id;
+                          const srvUrl = getRouteUrl(srv.id, lang);
                           return (
-                            <button
+                            <a
                               key={srv.id}
-                              onClick={() => handleServiceClick(srv.id)}
-                              className={`w-full p-3 rounded-2xl text-left flex items-start gap-3.5 transition-all group/item ${
+                              href={srvUrl}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                handleServiceClick(srv.id);
+                              }}
+                              className={`w-full p-3 rounded-2xl text-left flex items-start gap-3.5 transition-all group/item block ${
                                 isCurrent 
                                   ? 'bg-overseas/10 border border-overseas/30' 
                                   : 'hover:bg-slate-50 border border-transparent hover:border-slate-200/80'
@@ -165,7 +175,7 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
                                   {srv.desc}
                                 </p>
                               </div>
-                            </button>
+                            </a>
                           );
                         })}
                       </div>
@@ -206,64 +216,69 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
             </div>
 
             {/* 2. Blog */}
-            <button
-              onClick={() => handleNavClick('blog')}
-              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
+            <a
+              href={getRouteUrl('blog', lang)}
+              onClick={(e) => { e.preventDefault(); handleNavClick('blog'); }}
+              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all block ${
                 currentPage === 'blog' 
                   ? 'text-overseas bg-overseas/10' 
                   : 'text-navy/85 hover:text-overseas hover:bg-white/60'
               }`}
             >
               Blog
-            </button>
+            </a>
 
             {/* 2.5 Karşılaştırmalar (BOFU) */}
-            <button
-              onClick={() => handleNavClick('comparison')}
-              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
+            <a
+              href={getRouteUrl('comparison', lang)}
+              onClick={(e) => { e.preventDefault(); handleNavClick('comparison'); }}
+              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all block ${
                 currentPage === 'comparison' 
                   ? 'text-overseas bg-overseas/10' 
                   : 'text-navy/85 hover:text-overseas hover:bg-white/60'
               }`}
             >
               {isTr ? 'Karşılaştırma' : 'Comparisons'}
-            </button>
+            </a>
 
             {/* 2.6 Hedef Kitle / Persona */}
-            <button
-              onClick={() => handleNavClick('persona')}
-              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
+            <a
+              href={getRouteUrl('persona', lang)}
+              onClick={(e) => { e.preventDefault(); handleNavClick('persona'); }}
+              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all block ${
                 currentPage === 'persona' 
                   ? 'text-overseas bg-overseas/10' 
                   : 'text-navy/85 hover:text-overseas hover:bg-white/60'
               }`}
             >
               {isTr ? 'Hedef Kitle' : 'Personas'}
-            </button>
+            </a>
 
             {/* 3. Hakkımızda */}
-            <button
-              onClick={() => handleNavClick('about')}
-              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
+            <a
+              href={getRouteUrl('about', lang)}
+              onClick={(e) => { e.preventDefault(); handleNavClick('about'); }}
+              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all block ${
                 currentPage === 'about' 
                   ? 'text-overseas bg-overseas/10' 
                   : 'text-navy/85 hover:text-overseas hover:bg-white/60'
               }`}
             >
               {isTr ? 'Hakkımızda' : 'About'}
-            </button>
+            </a>
 
             {/* 4. İletişim */}
-            <button
-              onClick={() => handleNavClick('contact')}
-              className={`px-3.5 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all ${
+            <a
+              href={getRouteUrl('contact', lang)}
+              onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }}
+              className={`px-3.5 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all block ${
                 currentPage === 'contact' 
                   ? 'text-overseas bg-overseas/10' 
                   : 'text-navy/85 hover:text-overseas hover:bg-white/60'
               }`}
             >
               {isTr ? 'İletişim' : 'Contact'}
-            </button>
+            </a>
 
           </nav>
 
@@ -334,22 +349,28 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
               {isTr ? 'HİZMETLERİMİZ' : 'OUR SERVICES'}
             </span>
             {servicesList.map((s) => (
-              <button
+              <a
                 key={s.id}
-                onClick={() => handleServiceClick(s.id)}
-                className="w-full text-left px-3 py-2 rounded-xl text-xs font-semibold text-navy hover:bg-overseas/10 flex items-center justify-between"
+                href={getRouteUrl(s.id, lang)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleServiceClick(s.id);
+                }}
+                className="w-full text-left px-3 py-2 rounded-xl text-xs font-semibold text-navy hover:bg-overseas/10 flex items-center justify-between block"
               >
                 <span>{s.title}</span>
                 <ArrowRight className="w-3.5 h-3.5 text-overseas" />
-              </button>
+              </a>
             ))}
           </div>
 
           <div className="pt-2 border-t border-slate-200 space-y-1 text-xs font-bold text-navy">
-            <button onClick={() => handleNavClick('home')} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100">{isTr ? 'Ana Sayfa' : 'Home'}</button>
-            <button onClick={() => handleNavClick('blog')} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100">Blog</button>
-            <button onClick={() => handleNavClick('about')} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100">{isTr ? 'Hakkımızda' : 'About'}</button>
-            <button onClick={() => handleNavClick('contact')} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100">{isTr ? 'İletişim' : 'Contact'}</button>
+            <a href={getRouteUrl('home', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('home'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">{isTr ? 'Ana Sayfa' : 'Home'}</a>
+            <a href={getRouteUrl('blog', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('blog'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">Blog</a>
+            <a href={getRouteUrl('comparison', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('comparison'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">{isTr ? 'Karşılaştırma' : 'Comparisons'}</a>
+            <a href={getRouteUrl('persona', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('persona'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">{isTr ? 'Hedef Kitle' : 'Personas'}</a>
+            <a href={getRouteUrl('about', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('about'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">{isTr ? 'Hakkımızda' : 'About'}</a>
+            <a href={getRouteUrl('contact', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">{isTr ? 'İletişim' : 'Contact'}</a>
           </div>
 
           <div className="pt-2">

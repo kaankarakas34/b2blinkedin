@@ -3,7 +3,9 @@ import { blogPosts } from '../data/blogPosts';
 import { BookOpen, Clock, ArrowRight, X, User, Tag, Calendar, Share2, Check } from 'lucide-react';
 import { LinkedInIcon } from './LinkedInIcons';
 
-export const BlogSection = ({ lang, t, onOpenModal }) => {
+import { MarkdownRenderer } from './MarkdownRenderer';
+
+export const BlogSection = ({ lang, t, onOpenModal, onNavigate }) => {
   const [selectedPost, setSelectedPost] = useState(null);
   const [copied, setCopied] = useState(false);
 
@@ -60,13 +62,21 @@ export const BlogSection = ({ lang, t, onOpenModal }) => {
             const summary = lang === 'tr' ? post.summaryTr : post.summaryEn;
             const category = lang === 'tr' ? post.categoryTr : post.categoryEn;
             const readTime = lang === 'tr' ? post.readTimeTr : post.readTimeEn;
-            const imgSrc = getImageSrc(post.image);
+            const postUrl = lang === 'tr' ? `/blog/${post.slug || post.id}/` : `/en/blog/${post.slug || post.id}/`;
 
             return (
-              <article 
+              <a 
                 key={post.id}
-                onClick={() => setSelectedPost(post)}
-                className="glass-card rounded-3xl border border-white/80 shadow-clean overflow-hidden flex flex-col justify-between group cursor-pointer hover:border-overseas/40 transition-all duration-300"
+                href={postUrl}
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (onNavigate) {
+                    onNavigate('blog-detail', post.slug || post.id);
+                  } else {
+                    setSelectedPost(post);
+                  }
+                }}
+                className="glass-card rounded-3xl border border-white/80 shadow-clean overflow-hidden flex flex-col justify-between group cursor-pointer hover:border-overseas/40 transition-all duration-300 block text-left"
               >
                 <div>
                   {/* Article Visual with LinkedIn Branding */}
@@ -121,9 +131,24 @@ export const BlogSection = ({ lang, t, onOpenModal }) => {
                     <LinkedInIcon className="w-4 h-4 fill-current" />
                   </div>
                 </div>
-              </article>
+              </a>
             );
           })}
+        </div>
+
+        {/* View All Guides Link */}
+        <div className="text-center mb-12">
+          <a
+            href={lang === 'tr' ? "/blog/" : "/en/blog/"}
+            onClick={(e) => {
+              e.preventDefault();
+              if (onNavigate) onNavigate('blog');
+            }}
+            className="btn-glass-secondary inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-xs sm:text-sm font-bold shadow-clean hover:text-overseas transition-colors"
+          >
+            <span>{lang === 'tr' ? 'Tüm B2B LinkedIn Rehberlerini İnceleyin (10 Makale)' : 'Explore All 10 B2B LinkedIn Guides'}</span>
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
 
         {/* Turnkey CTA Callout */}
@@ -190,11 +215,9 @@ export const BlogSection = ({ lang, t, onOpenModal }) => {
               />
             </div>
 
-            {/* Full Formatted Article Content */}
-            <div className="prose prose-sm sm:prose max-w-none text-navy/90 leading-relaxed space-y-4 mb-8">
-              <div className="whitespace-pre-line">
-                {lang === 'tr' ? selectedPost.contentTr : selectedPost.contentEn}
-              </div>
+            {/* Full Formatted Article Content with Semantic HTML */}
+            <div className="mb-8">
+              <MarkdownRenderer content={lang === 'tr' ? selectedPost.contentTr : selectedPost.contentEn} />
             </div>
 
             {/* Footer actions inside modal */}

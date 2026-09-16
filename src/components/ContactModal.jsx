@@ -88,13 +88,15 @@ export const ContactModal = ({ isOpen, onClose, t }) => {
               
               {/* Full Name */}
               <div>
-                <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                <label htmlFor="modal-name" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                   {t.modal.nameLabel}
                 </label>
                 <div className="relative">
                   <User className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
                   <input
                     required
+                    id="modal-name"
+                    name="name"
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -107,13 +109,15 @@ export const ContactModal = ({ isOpen, onClose, t }) => {
               {/* Work Email & Phone (2 cols) */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                  <label htmlFor="modal-email" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                     {t.modal.emailLabel}
                   </label>
                   <div className="relative">
                     <Mail className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
                     <input
                       required
+                      id="modal-email"
+                      name="email"
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -124,13 +128,15 @@ export const ContactModal = ({ isOpen, onClose, t }) => {
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                  <label htmlFor="modal-phone" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                     {t.modal.phoneLabel}
                   </label>
                   <div className="relative">
                     <Phone className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
                     <input
                       required
+                      id="modal-phone"
+                      name="phone"
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
@@ -143,13 +149,15 @@ export const ContactModal = ({ isOpen, onClose, t }) => {
 
               {/* Company & Website */}
               <div>
-                <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                <label htmlFor="modal-company" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                   {t.modal.companyLabel}
                 </label>
                 <div className="relative">
                   <Building2 className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
                   <input
                     required
+                    id="modal-company"
+                    name="company"
                     type="text"
                     value={formData.company}
                     onChange={(e) => setFormData({...formData, company: e.target.value})}
@@ -161,12 +169,14 @@ export const ContactModal = ({ isOpen, onClose, t }) => {
 
               {/* Target Sector */}
               <div>
-                <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                <label htmlFor="modal-sector" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                   {t.modal.targetSectorLabel}
                 </label>
                 <div className="relative">
                   <Target className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
                   <input
+                    id="modal-sector"
+                    name="sector"
                     type="text"
                     value={formData.sector}
                     onChange={(e) => setFormData({...formData, sector: e.target.value})}
@@ -178,10 +188,12 @@ export const ContactModal = ({ isOpen, onClose, t }) => {
 
               {/* Deal Size */}
               <div>
-                <label className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
+                <label htmlFor="modal-dealsize" className="block text-[11px] font-bold text-navy uppercase tracking-wider mb-1">
                   {t.modal.dealSizeLabel}
                 </label>
                 <select
+                  id="modal-dealsize"
+                  name="dealSize"
                   value={formData.dealSize}
                   onChange={(e) => setFormData({...formData, dealSize: e.target.value})}
                   className="w-full px-3.5 py-2.5 rounded-xl glass-input text-xs text-navy"

@@ -30,4 +30,5 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-Sitemap: https://b2blinkedin.overseas.marketing/sitemap.xml
+Sitemap: https://www.b2blinkedin.marketing/sitemap.xml
+

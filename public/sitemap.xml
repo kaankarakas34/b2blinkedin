@@ -2,115 +2,425 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Ana Sayfa (Home) -->
+  <!-- 1. Ana Sayfa (Home) -->
   <url>
-    <loc>https://b2blinkedin.overseas.marketing/</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://b2blinkedin.overseas.marketing/"/>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.b2blinkedin.marketing/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Hizmet: LinkedIn Outreach & AI -->
   <url>
-    <loc>https://b2blinkedin.overseas.marketing/#outreach</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#outreach"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#outreach"/>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Hizmet: LinkedIn Ads & ABM -->
-  <url>
-    <loc>https://b2blinkedin.overseas.marketing/#ads</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#ads"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#ads"/>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Hizmet: Profil Optimizasyonu -->
-  <url>
-    <loc>https://b2blinkedin.overseas.marketing/#profile</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#profile"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#profile"/>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Hizmet: Company Page Yönetimi -->
-  <url>
-    <loc>https://b2blinkedin.overseas.marketing/#company</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#company"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#company"/>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Hizmet: İçerik Yönetimi & Thought Leadership -->
-  <url>
-    <loc>https://b2blinkedin.overseas.marketing/#content</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#content"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#content"/>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blog & SEO/GEO Bilgi Merkezi -->
-  <url>
-    <loc>https://b2blinkedin.overseas.marketing/#blog</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#blog"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#blog"/>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://www.b2blinkedin.marketing/en/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/"/>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Hakkımızda -->
+  <!-- 2. Hizmet: LinkedIn Outreach & AI -->
   <url>
-    <loc>https://b2blinkedin.overseas.marketing/#about</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#about"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#about"/>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.b2blinkedin.marketing/linkedin-outreach/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-outreach/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-outreach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-outreach/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/linkedin-outreach/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-outreach/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-outreach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-outreach/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 
-  <!-- İletişim & Strateji Formu -->
+  <!-- 3. Hizmet: LinkedIn Reklam Ajansı & ABM -->
   <url>
-    <loc>https://b2blinkedin.overseas.marketing/#contact</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#contact"/>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://www.b2blinkedin.marketing/linkedin-reklam-yonetimi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-reklam-yonetimi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-ads/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-reklam-yonetimi/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/linkedin-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-reklam-yonetimi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-ads/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-reklam-yonetimi/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 4. Hizmet: LinkedIn Profil Optimizasyonu -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/linkedin-profil-optimizasyonu/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-profil-optimizasyonu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-profile-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-profil-optimizasyonu/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/linkedin-profile-optimization/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-profil-optimizasyonu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-profile-optimization/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-profil-optimizasyonu/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 5. Hizmet: Company Page Yönetimi -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/linkedin-sirket-sayfasi-yonetimi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-sirket-sayfasi-yonetimi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-company-page/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-sirket-sayfasi-yonetimi/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/linkedin-company-page/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-sirket-sayfasi-yonetimi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-company-page/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-sirket-sayfasi-yonetimi/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 6. Hizmet: İçerik Yönetimi & Ghostwriting -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/linkedin-icerik-yonetimi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-icerik-yonetimi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-content-management/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-icerik-yonetimi/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/linkedin-content-management/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-icerik-yonetimi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-content-management/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-icerik-yonetimi/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 7. Blog & Bilgi Merkezi -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 8. Tekil Blog Yazıları (10 Rehber) -->
+  <!-- 8.1 B2B Marketing Nedir -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/b2b-marketing/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/b2b-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/b2b-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/b2b-marketing/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/b2b-marketing/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/b2b-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/b2b-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/b2b-marketing/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 8.2 B2B Lead Generation -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/b2b-lead-generation/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/b2b-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/b2b-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/b2b-lead-generation/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/b2b-lead-generation/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/b2b-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/b2b-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/b2b-lead-generation/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 8.3 Account-Based Marketing -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/account-based-marketing/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/account-based-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/account-based-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/account-based-marketing/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/account-based-marketing/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/account-based-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/account-based-marketing/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/account-based-marketing/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 8.4 LinkedIn Reklam Maliyeti Rehberi -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/linkedin-reklam-maliyeti-rehberi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-reklam-maliyeti-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-reklam-maliyeti-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-reklam-maliyeti-rehberi/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/linkedin-reklam-maliyeti-rehberi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-reklam-maliyeti-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-reklam-maliyeti-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-reklam-maliyeti-rehberi/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 8.5 LinkedIn Ads vs Google Ads -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/linkedin-ads-vs-google-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-ads-vs-google-ads/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-ads-vs-google-ads/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-ads-vs-google-ads/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/linkedin-ads-vs-google-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-ads-vs-google-ads/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-ads-vs-google-ads/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-ads-vs-google-ads/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 8.6 LinkedIn Outreach Mesaj Örnekleri -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/linkedin-outreach-mesaj-ornekleri/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-outreach-mesaj-ornekleri/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-outreach-mesaj-ornekleri/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-outreach-mesaj-ornekleri/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/linkedin-outreach-mesaj-ornekleri/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-outreach-mesaj-ornekleri/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-outreach-mesaj-ornekleri/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-outreach-mesaj-ornekleri/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 8.7 SaaS İçin LinkedIn Lead Gen -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/saas-icin-linkedin-lead-generation/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/saas-icin-linkedin-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/saas-icin-linkedin-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/saas-icin-linkedin-lead-generation/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/saas-icin-linkedin-lead-generation/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/saas-icin-linkedin-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/saas-icin-linkedin-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/saas-icin-linkedin-lead-generation/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 8.8 AI LinkedIn Outreach Strategy 2026 -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/linkedin-outreach-ai-strategy-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-outreach-ai-strategy-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-outreach-ai-strategy-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-outreach-ai-strategy-2026/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/linkedin-outreach-ai-strategy-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-outreach-ai-strategy-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-outreach-ai-strategy-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-outreach-ai-strategy-2026/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 8.9 Profile Landing Page Conversion -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/linkedin-profile-landing-page-conversion/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-profile-landing-page-conversion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-profile-landing-page-conversion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-profile-landing-page-conversion/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/linkedin-profile-landing-page-conversion/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-profile-landing-page-conversion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-profile-landing-page-conversion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-profile-landing-page-conversion/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 8.10 LinkedIn Ads ABM Growth -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/blog/linkedin-ads-abm-b2b-growth/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-ads-abm-b2b-growth/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-ads-abm-b2b-growth/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-ads-abm-b2b-growth/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/blog/linkedin-ads-abm-b2b-growth/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/blog/linkedin-ads-abm-b2b-growth/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/blog/linkedin-ads-abm-b2b-growth/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/blog/linkedin-ads-abm-b2b-growth/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 9. İletişim -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/iletisim/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/iletisim/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/iletisim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/iletisim/"/>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Hedef Kitle & Karar Verici Personaları (CEO, CMO, Satın Alma) -->
+  <!-- 10. Hakkımızda -->
   <url>
-    <loc>https://b2blinkedin.overseas.marketing/#persona</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#persona"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#persona"/>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://www.b2blinkedin.marketing/hakkimizda/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/hakkimizda/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/hakkimizda/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/hakkimizda/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 11. Karar Verici Personaları -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/hedef-kitle-personalar/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/hedef-kitle-personalar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/personas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/hedef-kitle-personalar/"/>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
-
-  <!-- Karşılaştırma & BOFU Matrisi (LinkedIn Ads vs Google, Outreach vs Email) -->
   <url>
-    <loc>https://b2blinkedin.overseas.marketing/#comparison</loc>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://b2blinkedin.overseas.marketing/?lang=tr#comparison"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://b2blinkedin.overseas.marketing/?lang=en#comparison"/>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://www.b2blinkedin.marketing/en/personas/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/hedef-kitle-personalar/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/personas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/hedef-kitle-personalar/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 12. B2B Karşılaştırma Matrisi -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/b2b-karsilastirma-matrisi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/b2b-karsilastirma-matrisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/comparisons/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/b2b-karsilastirma-matrisi/"/>
+    <lastmod>2026-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/comparisons/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/b2b-karsilastirma-matrisi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/comparisons/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/b2b-karsilastirma-matrisi/"/>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

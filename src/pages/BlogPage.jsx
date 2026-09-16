@@ -3,6 +3,7 @@ import { blogPosts } from '../data/blogPosts';
 import { seoArticles } from '../data/seoArticlesData';
 import { BookOpen, Clock, ArrowRight, X, Calendar, Share2, Check, Sparkles, ChevronDown, HelpCircle } from 'lucide-react';
 import { LinkedInIcon } from '../components/LinkedInIcons';
+import { MarkdownRenderer } from '../components/MarkdownRenderer';
 
 export const BlogPage = ({ lang, t, onOpenModal, onNavigate }) => {
   const isTr = lang === 'tr';
@@ -100,17 +101,31 @@ export const BlogPage = ({ lang, t, onOpenModal, onNavigate }) => {
             const readTime = isTr ? post.readTimeTr : post.readTimeEn;
             const imgSrc = getImageSrc(post.image);
 
+            const postUrl = isTr ? `/blog/${post.slug || post.id}/` : `/en/blog/${post.slug || post.id}/`;
+
             return (
-              <article 
+              <a 
                 key={post.id}
-                onClick={() => setSelectedPost(post)}
-                className="glass-card rounded-3xl border border-white/80 shadow-clean overflow-hidden flex flex-col justify-between group cursor-pointer hover:border-overseas/40 transition-all duration-300"
+                href={postUrl}
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (onNavigate) {
+                    onNavigate('blog-detail', post.slug || post.id);
+                  } else {
+                    setSelectedPost(post);
+                  }
+                }}
+                className="glass-card rounded-3xl border border-white/80 shadow-clean overflow-hidden flex flex-col justify-between group cursor-pointer hover:border-overseas/40 transition-all duration-300 block text-left"
               >
                 <div>
                   <div className="relative aspect-[16/9] bg-slate-900 overflow-hidden">
                     <img 
                       src={imgSrc} 
                       alt={title} 
+                      width="800"
+                      height="450"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     />
                     <div className="absolute top-3 left-3 glass-card-dark px-3 py-1 rounded-xl text-[11px] font-bold text-white flex items-center gap-1.5 border border-white/20">
@@ -150,7 +165,7 @@ export const BlogPage = ({ lang, t, onOpenModal, onNavigate }) => {
                     <LinkedInIcon className="w-4 h-4 fill-current" />
                   </div>
                 </div>
-              </article>
+              </a>
             );
           })}
         </div>
@@ -187,10 +202,8 @@ export const BlogPage = ({ lang, t, onOpenModal, onNavigate }) => {
               />
             </div>
 
-            <div className="prose prose-sm sm:prose max-w-none text-navy/90 leading-relaxed space-y-4 mb-8">
-              <div className="whitespace-pre-line text-sm sm:text-base">
-                {isTr ? selectedPost.contentTr : selectedPost.contentEn}
-              </div>
+            <div className="mb-8">
+              <MarkdownRenderer content={isTr ? selectedPost.contentTr : selectedPost.contentEn} />
             </div>
 
             {/* GEO Structured Answers (AI Search & Executive FAQs) */}
