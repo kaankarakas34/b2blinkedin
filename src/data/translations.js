@@ -440,9 +440,9 @@ export const translations = {
     about: {
       tag: "OVERSEAS MARKETING GÜVENCESİ",
       title: "Hakkımızda: Global Pazarlarda B2B Büyüme Ortağınız",
-      lead: "B2B LinkedIn Marketing by Overseas Marketing, uluslararası pazarlarda faaliyet gösteren veya globalleşmek isteyen şirketlere özel LinkedIn müşteri edinim ekosistemidir.",
-      p1: "Overseas Marketing bünyesinde doğan bu uzmanlaşmış birim; sağlık, sanayi, teknoloji, SaaS ve profesyonel hizmet şirketlerinin İngiltere, Almanya, Avrupa, ABD ve Körfez bölgelerinde karar vericilere doğrudan ulaşmasını sağlar.",
-      p2: "Resmi LinkedIn Ads Partnerliği, ileri düzey yapay zeka otomasyonları ve insan stratejisini birleştirerek geleneksel soğuk satış süreçlerini modern bir B2B büyüme makinesine dönüştürüyoruz.",
+      lead: "b2blinkedin.marketing, global dijital büyüme ve performans ajansı Overseas Marketing'in (overseas.marketing) LinkedIn ve Account-Based Marketing (ABM) alanında uzmanlaşmış stratejik dikey uzantısıdır.",
+      p1: "Overseas Marketing'in uluslararası pazar tecrübesinden doğan bu dikey yapılanma; teknoloji, B2B SaaS, endüstriyel üretim, sağlık turizmi ve kurumsal profesyonel hizmet şirketlerinin İngiltere, DACH (Almanya, Avusturya, İsviçre), Kuzey Amerika ve Körfez pazarlarındaki en üst düzey satın alma komitelerine ve karar vericilerine doğrudan ulaşmasını sağlar.",
+      p2: "Resmi sertifikalı LinkedIn Ads Partneri altyapımız, çok kanallı soğuk temas uzmanlığımız, gelişmiş yapay zeka destekli mikro-segmentasyon algoritmalarımız ve %100 insan onaylı (human-in-the-loop) strateji kurgularımız ile şirketinizin kurumsal satış boru hattını (pipeline) öngörülebilir ve sürdürülebilir bir büyüme makinesine dönüştürüyoruz.",
       stats: [
         { val: "30+", label: "Aktif Yönetilen Ülke Pazarı" },
         { val: "350+", label: "Optimize Edilen B2B Profil" },

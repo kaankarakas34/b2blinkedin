@@ -77,11 +77,11 @@ export const Footer = ({ t, lang = 'tr', onOpenModal, onNavigate }) => {
               {t.footer.solutionsTitle}
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
-              <li><a href={getRouteUrl('home', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('home'); }} className="hover:text-white transition-colors block">SaaS & Kurumsal Yazılım</a></li>
-              <li><a href={getRouteUrl('persona', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('persona'); }} className="hover:text-white transition-colors block">{lang === 'tr' ? 'Karar Verici Personaları' : 'B2B Personas'}</a></li>
-              <li><a href={getRouteUrl('comparison', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('comparison'); }} className="hover:text-white transition-colors block">{lang === 'tr' ? 'B2B Karşılaştırma Matrisi' : 'Comparisons'}</a></li>
-              <li><a href={getRouteUrl('about', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }} className="hover:text-white transition-colors block">{lang === 'tr' ? 'Hakkımızda' : 'About'}</a></li>
+              <li><a href={getRouteUrl('home', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('home'); }} className="hover:text-white transition-colors block">{lang === 'tr' ? 'Ana Sayfa' : 'Home'}</a></li>
+              <li><a href={getRouteUrl('outreach', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('outreach'); }} className="hover:text-white transition-colors block">{lang === 'tr' ? 'B2B Outreach Çözümleri' : 'B2B Outreach Solutions'}</a></li>
+              <li><a href={getRouteUrl('about', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }} className="hover:text-white transition-colors block">{lang === 'tr' ? 'Hakkımızda & Overseas' : 'About & Overseas'}</a></li>
               <li><a href={getRouteUrl('blog', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog'); }} className="hover:text-white transition-colors block">LinkedIn B2B Blog</a></li>
+              <li><a href={getRouteUrl('contact', lang)} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('contact'); }} className="hover:text-white transition-colors block">{lang === 'tr' ? 'İletişim & Strateji Görüşmesi' : 'Contact & Strategy Call'}</a></li>
             </ul>
           </div>
 

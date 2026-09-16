@@ -228,32 +228,6 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
               Blog
             </a>
 
-            {/* 2.5 Karşılaştırmalar (BOFU) */}
-            <a
-              href={getRouteUrl('comparison', lang)}
-              onClick={(e) => { e.preventDefault(); handleNavClick('comparison'); }}
-              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all block ${
-                currentPage === 'comparison' 
-                  ? 'text-overseas bg-overseas/10' 
-                  : 'text-navy/85 hover:text-overseas hover:bg-white/60'
-              }`}
-            >
-              {isTr ? 'Karşılaştırma' : 'Comparisons'}
-            </a>
-
-            {/* 2.6 Hedef Kitle / Persona */}
-            <a
-              href={getRouteUrl('persona', lang)}
-              onClick={(e) => { e.preventDefault(); handleNavClick('persona'); }}
-              className={`px-3 py-2 text-xs xl:text-sm font-bold rounded-xl transition-all block ${
-                currentPage === 'persona' 
-                  ? 'text-overseas bg-overseas/10' 
-                  : 'text-navy/85 hover:text-overseas hover:bg-white/60'
-              }`}
-            >
-              {isTr ? 'Hedef Kitle' : 'Personas'}
-            </a>
-
             {/* 3. Hakkımızda */}
             <a
               href={getRouteUrl('about', lang)}
@@ -367,8 +341,6 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
           <div className="pt-2 border-t border-slate-200 space-y-1 text-xs font-bold text-navy">
             <a href={getRouteUrl('home', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('home'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">{isTr ? 'Ana Sayfa' : 'Home'}</a>
             <a href={getRouteUrl('blog', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('blog'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">Blog</a>
-            <a href={getRouteUrl('comparison', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('comparison'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">{isTr ? 'Karşılaştırma' : 'Comparisons'}</a>
-            <a href={getRouteUrl('persona', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('persona'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">{isTr ? 'Hedef Kitle' : 'Personas'}</a>
             <a href={getRouteUrl('about', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('about'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">{isTr ? 'Hakkımızda' : 'About'}</a>
             <a href={getRouteUrl('contact', lang)} onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }} className="w-full text-left px-3 py-2 rounded-lg hover:bg-slate-100 block">{isTr ? 'İletişim' : 'Contact'}</a>
           </div>

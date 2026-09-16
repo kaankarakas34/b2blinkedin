@@ -64,17 +64,21 @@ export const AboutPage = ({ lang, t, onOpenModal, onNavigate }) => {
                 <div className="bg-[#0E151F] px-4 py-2.5 rounded-2xl border border-white/15 mb-4">
                   <img src="/linkedin_ads_partner.png" alt="LinkedIn Ads Partner" className="h-10 w-auto block mx-auto" />
                 </div>
-                <h3 className="font-heading font-bold text-xl text-white mb-2">Resmi Sertifikalı Ajans</h3>
+                <h3 className="font-heading font-bold text-xl text-white mb-2">
+                  {isTr ? 'Overseas Marketing Uzantısı' : 'Overseas Marketing Vertical'}
+                </h3>
                 <p className="text-xs text-slate-300 mb-6 leading-relaxed">
-                  Overseas Marketing uluslararası B2B büyüme ve performans pazarlamada tescilli LinkedIn Ads Partneridir.
+                  {isTr 
+                    ? 'b2blinkedin.marketing, küresel B2B büyüme ve performans ajansı Overseas Marketing bünyesindeki tescilli LinkedIn Ads & Outreach operasyon merkezidir.' 
+                    : 'b2blinkedin.marketing is the dedicated LinkedIn Ads and executive outbound acquisition hub of Overseas Marketing.'}
                 </p>
                 <a
-                  href="https://www.overseas.marketing"
+                  href="https://overseas.marketing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors"
                 >
-                  <span>Overseas Marketing Resmi Sitesi</span>
+                  <span>{isTr ? 'overseas.marketing Ana Sitesini İncele' : 'Visit overseas.marketing'}</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
