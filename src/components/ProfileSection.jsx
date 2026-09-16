@@ -34,12 +34,26 @@ export const ProfileSection = ({ t, onOpenModal }) => {
           <div className="lg:col-span-6">
             <div className="glass-card p-3 sm:p-4 rounded-3xl shadow-elevated border border-white/80 group">
               <div className="relative rounded-2xl overflow-hidden aspect-[16/9] bg-slate-950 shadow-inner">
-                <img 
-                  src="/images/linkedin_profile_abm.jpg" 
-                  alt="LinkedIn Profile Landing Page Transformation" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
+                <picture>
+                  <source 
+                    media="(max-width: 640px)" 
+                    srcSet="/images/linkedin_profile_abm-mobile.webp" 
+                    type="image/webp" 
+                  />
+                  <source 
+                    srcSet="/images/linkedin_profile_abm.webp" 
+                    type="image/webp" 
+                  />
+                  <img 
+                    src="/images/linkedin_profile_abm.jpg" 
+                    alt="LinkedIn Profile Landing Page Transformation" 
+                    width="1376"
+                    height="768"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                </picture>
 
                 <div className="absolute top-3 left-3 glass-card-dark px-3 py-1.5 rounded-xl text-[11px] font-semibold flex items-center gap-2 border border-white/20">
                   <LinkedInIcon className="w-4 h-4 fill-sky-400" />

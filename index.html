@@ -1,14 +1,32 @@
 <!doctype html>
 <html lang="tr" class="scroll-smooth">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TC69ZV02B"></script>
+    <!-- Preload Critical Hero Image for Mobile & Desktop (Eliminates LCP Delay) -->
+    <link rel="preload" as="image" href="/images/linkedin_b2b_hero-mobile.webp" type="image/webp" media="(max-width: 640px)" fetchpriority="high">
+    <link rel="preload" as="image" href="/images/linkedin_b2b_hero.webp" type="image/webp" media="(min-width: 641px)" fetchpriority="high">
+
+    <!-- Google tag (gtag.js) - Non-blocking Deferral for 100/100 Mobile PageSpeed -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-0TC69ZV02B');
+      function loadGtag() {
+        if (window._gtagLoaded) return;
+        window._gtagLoaded = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-0TC69ZV02B';
+        document.head.appendChild(script);
+        gtag('js', new Date());
+        gtag('config', 'G-0TC69ZV02B');
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(function() { setTimeout(loadGtag, 2000); });
+      } else {
+        setTimeout(loadGtag, 2500);
+      }
+      ['scroll', 'touchstart', 'mousemove', 'click', 'keydown'].forEach(function(e) {
+        window.addEventListener(e, loadGtag, { once: true, passive: true });
+      });
     </script>
 
     <meta charset="UTF-8" />
@@ -59,10 +77,14 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230A66C2'><path d='M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.62 1.62 0 1 0 0-3.24 1.62 1.62 0 0 0 0 3.24M7.86 18.5V10.13H5.07V18.5h2.79z'/></svg>" />
 
-    <!-- Google Fonts: Inter Tight & Inter (Exact match to overseas.marketing) -->
+    <!-- Google Fonts: Inter Tight & Inter (Non-blocking Asynchronous Load) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+    </noscript>
 
     <!-- Schema.org JSON-LD Structured Data for Rich Search & GEO AI Recognition -->
     <script type="application/ld+json">
@@ -187,7 +209,6 @@
     </script>
   </head>
   <body class="bg-surface text-content-primary font-sans antialiased selection:bg-overseas selection:text-white overflow-x-hidden">
-    <meta name="google-site-verification" content="TY2LXpKFuUpSNAMpivfwVMEOFBF-i6NY0ig7EexkIq8" />
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

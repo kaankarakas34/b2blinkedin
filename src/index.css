@@ -175,6 +175,23 @@
   }
 }
 
+/* Mobile Performance Optimization for PageSpeed */
+@media (max-width: 768px) {
+  .bg-glow-orb-1, .bg-glow-orb-2, .bg-glow-orb-3 {
+    animation: none !important;
+    filter: blur(40px) !important;
+    width: 280px !important;
+    height: 280px !important;
+    opacity: 0.5 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-glow-orb-1, .bg-glow-orb-2, .bg-glow-orb-3 {
+    animation: none !important;
+  }
+}
+
 /* Glass Buttons */
 .btn-glass-primary {
   background: linear-gradient(135deg, #16202E 0%, #1F2C3F 100%);

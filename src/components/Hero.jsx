@@ -49,6 +49,9 @@ export const Hero = ({ t, onOpenModal }) => {
               <img 
                 src="/linkedin_ads_partner.png" 
                 alt="LinkedIn Ads Partner - Overseas Marketing" 
+                width="300"
+                height="134"
+                decoding="async"
                 className="h-6 sm:h-7 w-auto object-contain block"
               />
             </div>
@@ -146,12 +149,27 @@ export const Hero = ({ t, onOpenModal }) => {
             
             {/* Main Generated High-Resolution LinkedIn Hero Image */}
             <div className="relative rounded-2xl overflow-hidden aspect-[16/9] bg-slate-900 shadow-inner">
-              <img 
-                src="/images/linkedin_b2b_hero.jpg" 
-                alt="B2B LinkedIn Marketing by Overseas Marketing Architecture" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                loading="eager"
-              />
+              <picture>
+                <source 
+                  media="(max-width: 640px)" 
+                  srcSet="/images/linkedin_b2b_hero-mobile.webp" 
+                  type="image/webp" 
+                />
+                <source 
+                  srcSet="/images/linkedin_b2b_hero.webp" 
+                  type="image/webp" 
+                />
+                <img 
+                  src="/images/linkedin_b2b_hero.jpg" 
+                  alt="B2B LinkedIn Marketing by Overseas Marketing Architecture" 
+                  width="1376"
+                  height="768"
+                  fetchpriority="high"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="eager"
+                />
+              </picture>
 
               {/* Glass overlay badge on image */}
               <div className="absolute top-4 left-4 glass-card-dark px-3.5 py-2 rounded-xl text-xs font-medium flex items-center gap-2 border border-white/20">
@@ -162,7 +180,7 @@ export const Hero = ({ t, onOpenModal }) => {
               {/* Verified partner watermark */}
               <div className="absolute bottom-4 right-4 glass-card px-3 py-1.5 rounded-xl text-[11px] font-bold text-navy flex items-center gap-2 shadow-lg">
                 <div className="bg-[#0E151F] px-1.5 py-1 rounded-md flex items-center">
-                  <img src="/linkedin_ads_partner.png" alt="LinkedIn Ads Partner" className="h-4 sm:h-5 w-auto block" />
+                  <img src="/linkedin_ads_partner.png" alt="LinkedIn Ads Partner" width="300" height="134" decoding="async" className="h-4 sm:h-5 w-auto block" />
                 </div>
                 <span>Certified B2B Partner</span>
               </div>

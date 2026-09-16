@@ -2,20 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { translations } from './data/translations';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
-import { ContactModal } from './components/ContactModal';
-
-// Dedicated Subpages
 import { HomePage } from './pages/HomePage';
-import { OutreachPage } from './pages/OutreachPage';
-import { AdsPage } from './pages/AdsPage';
-import { ProfilePage } from './pages/ProfilePage';
-import { CompanyPage } from './pages/CompanyPage';
-import { ContentPage } from './pages/ContentPage';
-import { BlogPage } from './pages/BlogPage';
-import { AboutPage } from './pages/AboutPage';
-import { ContactPage } from './pages/ContactPage';
-import { PersonaPage } from './pages/PersonaPage';
-import { ComparisonPage } from './pages/ComparisonPage';
+
+// Lazy-loaded Subpages for optimal mobile bundle splitting
+const OutreachPage = React.lazy(() => import('./pages/OutreachPage').then(m => ({ default: m.OutreachPage })));
+const AdsPage = React.lazy(() => import('./pages/AdsPage').then(m => ({ default: m.AdsPage })));
+const ProfilePage = React.lazy(() => import('./pages/ProfilePage').then(m => ({ default: m.ProfilePage })));
+const CompanyPage = React.lazy(() => import('./pages/CompanyPage').then(m => ({ default: m.CompanyPage })));
+const ContentPage = React.lazy(() => import('./pages/ContentPage').then(m => ({ default: m.ContentPage })));
+const BlogPage = React.lazy(() => import('./pages/BlogPage').then(m => ({ default: m.BlogPage })));
+const AboutPage = React.lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })));
+const ContactPage = React.lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
+const PersonaPage = React.lazy(() => import('./pages/PersonaPage').then(m => ({ default: m.PersonaPage })));
+const ComparisonPage = React.lazy(() => import('./pages/ComparisonPage').then(m => ({ default: m.ComparisonPage })));
+const ContactModal = React.lazy(() => import('./components/ContactModal').then(m => ({ default: m.ContactModal })));
 
 export default function App() {
   const [lang, setLang] = useState(() => {
@@ -222,7 +222,13 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-grow">
-        {renderPage()}
+        <React.Suspense fallback={
+          <div className="min-h-[50vh] flex items-center justify-center">
+            <div className="w-8 h-8 border-3 border-overseas border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        }>
+          {renderPage()}
+        </React.Suspense>
       </main>
 
       {/* Footer */}
@@ -232,12 +238,16 @@ export default function App() {
         onNavigate={navigate}
       />
 
-      {/* Interactive Booking & Strategy Call Modal */}
-      <ContactModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        t={t} 
-      />
+      {/* Interactive Booking & Strategy Call Modal (Loaded on demand) */}
+      {isModalOpen && (
+        <React.Suspense fallback={null}>
+          <ContactModal 
+            isOpen={isModalOpen} 
+            onClose={() => setIsModalOpen(false)} 
+            t={t} 
+          />
+        </React.Suspense>
+      )}
     </div>
   );
 }

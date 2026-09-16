@@ -33,11 +33,11 @@ export const BlogPage = ({ lang, t, onOpenModal, onNavigate }) => {
 
   const getImageSrc = (imageKey) => {
     switch (imageKey) {
-      case 'linkedin_ai_outreach': return '/images/linkedin_ai_outreach.jpg';
-      case 'linkedin_profile_landing': return '/images/linkedin_profile_abm.jpg';
-      case 'linkedin_abm_ads': return '/images/linkedin_b2b_hero.jpg';
+      case 'linkedin_ai_outreach': return '/images/linkedin_ai_outreach.webp';
+      case 'linkedin_profile_landing': return '/images/linkedin_profile_abm.webp';
+      case 'linkedin_abm_ads': return '/images/linkedin_b2b_hero.webp';
       case 'linkedin_company_trust':
-      default: return '/images/linkedin_profile_abm.jpg';
+      default: return '/images/linkedin_profile_abm.webp';
     }
   };
 

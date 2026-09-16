@@ -40,12 +40,26 @@ export const AIOutreach = ({ t, onOpenModal }) => {
           <div className="lg:col-span-7">
             <div className="glass-card p-3 sm:p-4 rounded-3xl shadow-elevated border border-white/80 group">
               <div className="relative rounded-2xl overflow-hidden aspect-[16/9] bg-slate-950 shadow-inner">
-                <img 
-                  src="/images/linkedin_ai_outreach.jpg" 
-                  alt="AI-Powered LinkedIn Outreach Control Center" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
+                <picture>
+                  <source 
+                    media="(max-width: 640px)" 
+                    srcSet="/images/linkedin_ai_outreach-mobile.webp" 
+                    type="image/webp" 
+                  />
+                  <source 
+                    srcSet="/images/linkedin_ai_outreach.webp" 
+                    type="image/webp" 
+                  />
+                  <img 
+                    src="/images/linkedin_ai_outreach.jpg" 
+                    alt="AI-Powered LinkedIn Outreach Control Center" 
+                    width="1376"
+                    height="768"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                </picture>
 
                 {/* Floating telemetry pills */}
                 <div className="absolute top-3 left-3 glass-card-dark px-3 py-1.5 rounded-xl text-[11px] font-medium flex items-center gap-2 border border-white/20">

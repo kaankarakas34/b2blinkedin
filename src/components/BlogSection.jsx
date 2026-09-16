@@ -16,14 +16,14 @@ export const BlogSection = ({ lang, t, onOpenModal }) => {
   const getImageSrc = (imageKey) => {
     switch (imageKey) {
       case 'linkedin_ai_outreach':
-        return '/images/linkedin_ai_outreach.jpg';
+        return '/images/linkedin_ai_outreach.webp';
       case 'linkedin_profile_landing':
-        return '/images/linkedin_profile_abm.jpg';
+        return '/images/linkedin_profile_abm.webp';
       case 'linkedin_abm_ads':
-        return '/images/linkedin_b2b_hero.jpg';
+        return '/images/linkedin_b2b_hero.webp';
       case 'linkedin_company_trust':
       default:
-        return '/images/linkedin_profile_abm.jpg';
+        return '/images/linkedin_profile_abm.webp';
     }
   };
 
@@ -74,8 +74,11 @@ export const BlogSection = ({ lang, t, onOpenModal }) => {
                     <img 
                       src={imgSrc} 
                       alt={title} 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                      width="800"
+                      height="450"
                       loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                     />
                     
                     {/* LinkedIn Watermark & Category Tag */}

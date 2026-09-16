@@ -121,8 +121,12 @@ export const OutreachPage = ({ lang, t, onOpenModal, onNavigate }) => {
               <div className="glass-card p-4 rounded-3xl shadow-elevated border border-white/80 overflow-hidden group">
                 <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-slate-950 relative shadow-inner">
                   <img 
-                    src="/images/linkedin_ai_outreach.jpg" 
+                    src="/images/linkedin_ai_outreach.webp" 
                     alt="LinkedIn AI Outreach" 
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   <div className="absolute top-3 left-3 glass-card-dark px-3 py-1 rounded-xl text-[11px] font-bold text-white flex items-center gap-1.5 border border-white/20">
