@@ -62,6 +62,7 @@ export const BlogSection = ({ lang, t, onOpenModal, onNavigate }) => {
             const summary = lang === 'tr' ? post.summaryTr : post.summaryEn;
             const category = lang === 'tr' ? post.categoryTr : post.categoryEn;
             const readTime = lang === 'tr' ? post.readTimeTr : post.readTimeEn;
+            const imgSrc = getImageSrc(post.image);
             const postUrl = lang === 'tr' ? `/blog/${post.slug || post.id}/` : `/en/blog/${post.slug || post.id}/`;
 
             return (
