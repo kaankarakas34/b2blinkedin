@@ -58,18 +58,16 @@ export const AboutSection = ({ t, onOpenModal }) => {
               </div>
 
               <div className="mb-4">
-                <img 
-                  src="/linkedin_ads_partner.png" 
-                  alt="LinkedIn Ads Partner" 
-                  className="h-10 w-auto mx-auto mb-2"
-                />
-                <span className="text-xs font-bold text-sky-300 uppercase tracking-wider block">
-                  Resmi Sertifikalı Ajans
+                <span className="text-sm font-bold text-white uppercase tracking-wider block mb-1">
+                  B2B Büyüme & Outreach Merkezi
+                </span>
+                <span className="text-xs font-medium text-sky-300 block">
+                  Overseas Marketing Küresel Ağı
                 </span>
               </div>
 
-              <p className="text-xs text-slate-300 mb-6 max-w-xs">
-                Overseas Marketing altyapısı ve sertifikalı LinkedIn partnerliği ile şirketinizin küresel B2B büyümesini garantiye alın.
+              <p className="text-xs text-slate-300 mb-6 max-w-xs leading-relaxed">
+                Overseas Marketing'in uluslararası B2B büyüme altyapısı ve insan onaylı AI prospecting metodolojisiyle küresel satış boru hattınızı ölçekleyin.
               </p>
 
               <a

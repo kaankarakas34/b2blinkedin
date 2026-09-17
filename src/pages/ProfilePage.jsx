@@ -204,7 +204,7 @@ export const ProfilePage = ({ lang, t, onOpenModal, onNavigate }) => {
                 </li>
                 <li className="flex items-start gap-2.5">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                  <span>{isTr ? 'Banner: Değer önerisi, müşteri logoları ve partnerlik rozetlerini içeren tasarım.' : 'Banner: Custom branded asset with proof metrics and partner badges.'}</span>
+                  <span>{isTr ? 'Banner: Değer önerisi, müşteri kanıtları ve güven unsurlarını içeren tasarım.' : 'Banner: Custom branded asset with proof metrics and trust signals.'}</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />

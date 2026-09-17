@@ -20,8 +20,8 @@ export const AdsPage = ({ lang, t, onOpenModal, onNavigate }) => {
       a: "B2B sektörlerde anlamlı bir test hacmi ve veri olgunluğu elde etmek için aylık 1,500$ - 3,000$ arası bir medya harcaması önerilir. Yüksek ticket (50K$+ ACV) anlaşmalarda ABM modeliyle bütçe çok daha verimli kullanılır."
     },
     {
-      q: "Overseas Marketing'in resmi LinkedIn Ads Partner olması bize ne kazandırır?",
-      a: "Doğrudan LinkedIn merkez destek ekiplerine erişim, beta reklam formatlarına erken erişim, kampanya optimizasyonlarında algoritmik inceleme ve reklam harcamalarınızda sektör ortalamasından %25 daha düşük CPL (Cost-per-Lead) elde etmenizi sağlar."
+      q: "Overseas Marketing ile LinkedIn Ads yönetimi bize ne kazandırır?",
+      a: "B2B sektörlerde test edilmiş kampanya kurguları, Matched Audiences ve Thought Leader Ads uzmanlığı, derin dönüşüm takibi ve reklam harcamalarınızda sektör ortalamasından %25 daha düşük CPL (Cost-per-Lead) elde etmenizi sağlar."
     },
     {
       q: "Outreach ile LinkedIn Ads nasıl birlikte çalışır?",
@@ -37,8 +37,8 @@ export const AdsPage = ({ lang, t, onOpenModal, onNavigate }) => {
       a: "For statistically significant conversion testing, we recommend starting with $1,500 - $3,000 monthly media budget. In high-ticket enterprise ABM, precision targeting ensures near-zero wasted spend."
     },
     {
-      q: "What advantages does an official LinkedIn Ads Partner provide?",
-      a: "Direct escalation channels with LinkedIn engineering teams, access to beta targeting parameters, algorithmic audit diagnostics, and benchmark optimization resulting in an average 25% reduction in Cost-Per-Lead (CPL)."
+      q: "What advantages does specialized B2B LinkedIn Ads management provide?",
+      a: "Battle-tested B2B funnel architectures, advanced Matched Audiences & Thought Leader Ads deployment, end-to-end attribution tracking, and campaign optimization resulting in an average 25% reduction in Cost-Per-Lead (CPL)."
     },
     {
       q: "How do Outbound and Ads synergize?",
@@ -68,12 +68,10 @@ export const AdsPage = ({ lang, t, onOpenModal, onNavigate }) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-3">
-                <div className="bg-[#0E151F] px-2.5 py-1.5 rounded-xl border border-white/15">
-                  <img src="/linkedin_ads_partner.png" alt="LinkedIn Ads Partner" className="h-6 w-auto block" />
-                </div>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-sky-50 border border-sky-100">
+                <Target className="w-4 h-4 text-sky-600" />
                 <span className="text-xs font-bold text-navy uppercase tracking-wider">
-                  {isTr ? 'Resmi Sertifikalı LinkedIn Ads Partneri' : 'Official Certified LinkedIn Ads Partner'}
+                  {isTr ? 'B2B LinkedIn Ads & ABM Uzmanlığı' : 'B2B LinkedIn Ads & ABM Expertise'}
                 </span>
               </div>
 
@@ -100,7 +98,7 @@ export const AdsPage = ({ lang, t, onOpenModal, onNavigate }) => {
                 </button>
                 <div className="flex items-center gap-2 px-4 py-3 rounded-2xl glass-card text-xs font-semibold text-navy">
                   <Award className="w-4 h-4 text-overseas" />
-                  <span>{isTr ? 'Öncelikli Partner Desteği & Düşük CPL' : 'Certified Partner Support & Lower CPL'}</span>
+                  <span>{isTr ? 'Doğrulanmış B2B Uzmanlığı & Düşük CPL' : 'Specialized B2B Targeting & Lower CPL'}</span>
                 </div>
               </div>
 
@@ -138,8 +136,8 @@ export const AdsPage = ({ lang, t, onOpenModal, onNavigate }) => {
                     <span>ABM Campaign Manager</span>
                   </div>
                   <div className="absolute bottom-3 right-3 glass-card px-3 py-1.5 rounded-xl text-[11px] font-bold text-navy flex items-center gap-1.5 shadow-md">
-                    <img src="/linkedin_ads_partner.png" alt="Partner" width="300" height="134" loading="lazy" decoding="async" className="h-4 w-auto" />
-                    <span>Official Partner</span>
+                    <Award className="w-3.5 h-3.5 text-overseas" />
+                    <span>B2B Pipeline Strategy</span>
                   </div>
                 </div>
               </div>
@@ -356,11 +354,12 @@ export const AdsPage = ({ lang, t, onOpenModal, onNavigate }) => {
       <section className="py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card p-8 sm:p-12 rounded-3xl text-center border border-white/90 shadow-elevated bg-gradient-to-br from-white/90 to-blue-50/50">
-            <div className="bg-[#0E151F] px-3 py-1.5 rounded-xl border border-white/15 inline-block mb-3">
-              <img src="/linkedin_ads_partner.png" alt="LinkedIn Ads Partner" className="h-6 w-auto block" />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-sky-100 text-overseas font-bold text-xs uppercase tracking-wider mb-3">
+              <Target className="w-3.5 h-3.5" />
+              <span>{isTr ? 'B2B Boru Hattı Büyümesi' : 'B2B Pipeline Growth'}</span>
             </div>
             <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-navy mb-3">
-              {isTr ? 'LinkedIn Ads Kampanyanızı Resmi Partnerle Başlatın' : 'Launch Your LinkedIn Ads with a Certified Partner'}
+              {isTr ? 'LinkedIn Ads Kampanyanızı B2B Uzmanlarıyla Başlatın' : 'Scale Your LinkedIn Ads with B2B Specialists'}
             </h3>
             <p className="text-xs sm:text-sm text-content-secondary max-w-xl mx-auto mb-6">
               {isTr ? 'Sektörünüze özel tahmini CPL ve hedef şirket havuzu analizi için görüşme planlayın.' : 'Schedule an ads scoping briefing to review your vertical benchmarks and projected CPL.'}

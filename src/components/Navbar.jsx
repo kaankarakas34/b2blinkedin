@@ -46,7 +46,7 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
       desc: isTr ? '100-500 hedef şirkette satın alma komitelerini sponsorlu reklamlarla kuşatın.' : 'Account-based marketing and in-app lead gen targeting 100-500 key enterprise accounts.',
       icon: Target,
       img: '/images/linkedin_b2b_hero.jpg',
-      badge: isTr ? 'Resmi Partner' : 'Official Partner'
+      badge: isTr ? 'B2B Performans' : 'B2B Performance'
     },
     {
       id: 'profile',
@@ -185,18 +185,18 @@ export const Navbar = ({ lang, setLang, t, onOpenModal, currentPage, onNavigate 
                     <div className="col-span-4">
                       <div className="glass-card-dark p-5 rounded-2xl border border-white/15 h-full flex flex-col justify-between text-left">
                         <div>
-                          <div className="bg-[#0E151F] px-2.5 py-1.5 rounded-xl border border-white/15 inline-block mb-3">
-                            <img src="/linkedin_ads_partner.png" alt="LinkedIn Ads Partner" className="h-6 w-auto block" />
+                          <div className="p-2 rounded-xl bg-overseas/30 border border-white/15 inline-block mb-3">
+                            <Target className="w-5 h-5 text-sky-400" />
                           </div>
 
                           <h4 className="font-heading font-bold text-sm text-white mb-1.5 leading-snug">
-                            {isTr ? 'Resmi Sertifikalı Partner Ajans' : 'Official Certified Partner Agency'}
+                            {isTr ? 'B2B Müşteri Kazanım Sistemi' : 'B2B Customer Acquisition Engine'}
                           </h4>
 
                           <p className="text-[11px] text-slate-300 leading-relaxed mb-4">
                             {isTr 
-                              ? 'Overseas Marketing güvencesiyle uçtan uca B2B müşteri kazanımı ve onaylı LinkedIn reklam yönetimi.' 
-                              : 'Turnkey B2B customer acquisition and certified LinkedIn campaign architecture.'}
+                              ? 'Overseas Marketing uzmanlığıyla uçtan uca B2B müşteri kazanımı ve hedefli LinkedIn yönetimi.' 
+                              : 'Turnkey B2B customer acquisition and targeted LinkedIn growth architecture.'}
                           </p>
                         </div>
 

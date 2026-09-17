@@ -1,6 +1,6 @@
 import React from 'react';
 import { Target, CheckCircle2, ShieldCheck, ArrowRight, Zap, Layers, BarChart3 } from 'lucide-react';
-import { LinkedInIcon, LinkedInPartnerBadge } from './LinkedInIcons';
+import { LinkedInIcon } from './LinkedInIcons';
 
 export const AdsAndABM = ({ t, onOpenModal }) => {
   return (
@@ -41,7 +41,7 @@ export const AdsAndABM = ({ t, onOpenModal }) => {
                 <span className="text-xs font-bold text-sky-400 tracking-wider uppercase">
                   Hesap Bazlı Pazarlama (ABM)
                 </span>
-                <img src="/linkedin_ads_partner.png" alt="LinkedIn Ads Partner" className="h-7 w-auto" />
+                <Target className="w-6 h-6 text-sky-400" />
               </div>
 
               <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-white mb-3 leading-tight">
@@ -100,12 +100,12 @@ export const AdsAndABM = ({ t, onOpenModal }) => {
 
             <div className="glass-card p-4 rounded-2xl border border-white/80 flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="bg-[#0E151F] px-2 py-1.5 rounded-xl border border-white/10 shrink-0">
-                  <img src="/linkedin_ads_partner.png" alt="Partner" className="h-7 w-auto block" />
+                <div className="bg-sky-50 p-2.5 rounded-xl border border-sky-100 shrink-0 text-overseas">
+                  <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div className="text-xs text-navy font-medium">
-                  <span className="font-bold block">Resmi LinkedIn Ads Partnerliği</span>
-                  Öncelikli destek ve optimize edilmiş B2B kampanya maliyetleri.
+                  <span className="font-bold block">B2B LinkedIn Ads & ABM Kuşatması</span>
+                  Yalnızca satın alma yetkisi olan karar vericilere yönelik sıfır kayıp reklam modeli.
                 </div>
               </div>
             </div>

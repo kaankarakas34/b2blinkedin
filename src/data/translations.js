@@ -19,8 +19,8 @@ export const translations = {
       cta: "Demo / Strateji Görüşmesi"
     },
     hero: {
-      partnerBadgeText: "Resmi Sertifikalı LinkedIn Ads Partneri",
-      partnerSub: "Overseas Marketing Yetkili B2B Büyüme Ajansı",
+      partnerBadgeText: "B2B LinkedIn Müşteri Kazanım Uzmanlığı",
+      partnerSub: "Overseas Marketing B2B Satış ve Büyüme Altyapısı",
       positioningBadge: "B2B Müşteri Kazanım Kanalı",
       headline: "LinkedIn B2B Pazarlama ile Nitelikli Satış Görüşmeleri",
       subheadline: "Hedeflediğiniz şirketlerdeki doğru karar vericileri buluyor, LinkedIn üzerinden bağlantı kuruyor, markanızı anlatıyor ve satış görüşmelerine dönüşebilecek yeni konuşmalar başlatıyoruz.",
@@ -194,7 +194,7 @@ export const translations = {
           icon: "Building2"
         },
         {
-          title: "LinkedIn Ads (Partner Destekli)",
+          title: "LinkedIn Ads & ABM Kuşatması",
           desc: "Hedef şirketleri ve profesyonelleri retargeting ve ABM reklamlarıyla 360 derece çevreleyin.",
           icon: "Target"
         }
@@ -203,71 +203,71 @@ export const translations = {
     profileLandingPage: {
       tag: "DÖNÜŞÜM ODAKLI PROFİL",
       title: "Profiliniz sizin LinkedIn landing page'inizdir.",
-      lead: "Bir prospect mesajınızı gördüğünde sizi Google'da aramadan önce profilinize tıklar. Bu nedenle LinkedIn profilinizi klasik CV formatından çıkarıyoruz.",
+      lead: "Bir karar verici mesajınızı aldığında web sitenizden önce LinkedIn profilinize bakar. O profilin ilk 5 saniyede güven ve otorite inşa etmesi gerekir.",
       cvVsLanding: {
-        cvTitle: "Klasik CV Profili (Dönüşüm Kaybı)",
+        cvTitle: "Geleneksel CV Profili (Kayıp Fırsat)",
         cvItems: [
-          "Kronolojik iş geçmişi listesi",
-          "Teknik ve sıkıcı sorumluluk tanımları",
-          "Eksik veya jenerik kapak görseli",
-          "Ne sağladığı ve kime fayda sunduğu belirsiz",
-          "Harekete geçirici mesaj (CTA) yok"
+          "Kronolojik iş ve görev listesi",
+          "Kuru, teknik sorumluluk maddeleri",
+          "Varsayılan ya da rastgele stok görsel banner",
+          "Belirsiz hizmet ve kitle tanımı",
+          "Hiçbir çağrı (CTA) veya yönlendirme olmaması"
         ],
-        landingTitle: "Satış Odaklı Landing Page Profil (Yüksek Dönüşüm)",
+        landingTitle: "Satış Landing Page Profili (Yüksek Dönüşüm)",
         landingItems: [
           "İlk 5 saniyede anlaşılan net değer önerisi",
-          "Çözülen spesifik B2B problemler ve hedeflenen kitle",
-          "Sosyal kanıtlar, referanslar ve vaka analizleri",
-          "Öne Çıkanlar (Featured) alanında strateji dökümanları ve video",
-          "Doğrudan toplantı almaya yönlendiren net CTA kurgusu"
+          "Çözülen somut B2B problemler ve net ICP tanımı",
+          "Ölçülebilir vaka örnekleri ve başarı çıktıları",
+          "Featured alanında video, rehber ve randevu linki",
+          "Takviminize doğrudan yönlendiren net çağrılar"
         ]
       },
-      auditAreasTitle: "İlk 5 saniyede ne yaptığınız anlaşılmalı.",
-      auditAreasIntro: "Optimize ettiğimiz kritik alanlar:",
+      auditAreasTitle: "İlk beş saniyede ne yaptığınızı anlatın.",
+      auditAreasIntro: "Dönüşüm için baştan kurguladığımız temel alanlar:",
       auditPoints: [
-        "Profil fotoğrafı ve profesyonel arka plan",
-        "Dönüşüm odaklı özel Banner tasarımı",
-        "Değer vaat eden Headline (Başlık)",
-        "Hikaye ve kanıt sunan About bölümü",
-        "Sosyal kanıt sunan Featured (Öne Çıkanlar)",
-        "Sonuç odaklı Experience anlatımları",
-        "Hizmet ve çözüm vitrini konumlandırması",
-        "Stratejik CTA ve Takvim linkleri",
-        "Anahtar kelime (SEO) ve arama optimizasyonu",
-        "Yetkinlik ve onay yönetimi"
+        "Profil fotoğrafı ve profesyonel görsel duruş",
+        "Dönüşüm odaklı özel Header Banner tasarımı",
+        "Değer odaklı Headline (Başlık formülasyonu)",
+        "Müşteri hikayesi anlatan Hakkında (About) metni",
+        "Öne Çıkanlar (Featured) satış hunisi kurgusu",
+        "Sonuç odaklı Deneyim açıklamaları",
+        "Hizmetler (Services) sekmesi optimizasyonu",
+        "Toplantı takvimi ve web sitesi CTA bağlantıları",
+        "LinkedIn içi arama (SEO) anahtar kelimeleri",
+        "Stratejik sosyal kanıt ve tavsiye yönetimi"
       ],
-      conclusion: "Amaç profil ziyaretçisini takipçiye çevirmek değil; potansiyel müşteriyi satış görüşmesine yaklaştırmaktır."
+      conclusion: "Amaç sadece güzel görünen bir profil değil; yanıt oranını ve toplantı sayısını artıran bir satış varlığı oluşturmaktır."
     },
     companyPage: {
-      tag: "KURUMSAL PRESTİJ",
-      title: "Company Page Yönetimi: Outreach Sürecinin Güven Katmanı",
-      subtitle: "Potansiyel müşteriler şirketinizi kontrol ettiğinde terk edilmiş veya aylar önce güncellenmiş bir sayfa görmemeli.",
+      tag: "KURUMSAL GÜVEN",
+      title: "Company Page: Outreach Sürecinin Güven Katmanı",
+      subtitle: "Bir karar verici şirketinizin adını arattığında 6 ay önce bayram kutlaması yapılmış terk edilmiş bir sayfayla karşılaşmamalıdır.",
       items: [
-        { title: "Sayfa ve Görsel Optimizasyonu", desc: "Overseas Marketing standartlarında yüksek prestijli kurumsal kimlik entegrasyonu." },
-        { title: "Şirket Konumlandırması", desc: "Sektörel çözüm ve ürün değer önerilerinin net olarak vitrine çıkarılması." },
-        { title: "Düzenli ve Değer Üreten İçerik", desc: "Haftalık B2B düşünce liderliği, sektör içgörüleri ve başarı öyküleri." },
-        { title: "Çalışan Advocacy Altyapısı", desc: "Ekip üyelerinin erişim gücünü şirket büyümesi için kaldıraç yapma." },
-        { title: "Organik & Reklamlı Takipçi Büyümesi", desc: "Sadece hedef sektörlerdeki nitelikli karar vericilerden oluşan takipçi tabanı." }
+        { title: "Görsel Hiyerarşi ve Sayfa Denetimi", desc: "Overseas Marketing standartlarında kurumsal kimlik ve vitrin kurgusu." },
+        { title: "Şirket Değer Önerisi Konumlandırması", desc: "Çözdüğünüz ana problemleri ve B2B çözümlerinizi öne çıkaran mimari." },
+        { title: "Düzenli ve Prestijli İçerik Akışı", desc: "Haftalık sektör analizleri, başarı hikayeleri ve kurumsal güncellemeler." },
+        { title: "Çalışan Savunuculuğu (Advocacy)", desc: "Ekip üyelerinin paylaşımlarıyla şirket erişimini katlayan sistem." },
+        { title: "Takipçi ve Kitle Büyütme", desc: "Rastgele kitleler yerine sektördeki gerçek karar vericileri çeken büyüme." }
       ]
     },
     contentMgmt: {
       tag: "GELİR ODAKLI İÇERİK",
-      title: "LinkedIn İçerik Yönetimi: İçeriği beğeni için değil, satışı desteklemek için üretiyoruz.",
-      subtitle: "İçerikleriniz uzmanlığınızı kanıtlamalı. Potansiyel müşteri profilinizi incelediğinde 'Bu ekip ne yaptığını gerçekten çok iyi biliyor' demeli.",
+      title: "LinkedIn İçerik Yönetimi: Beğeni değil, satış boru hattı üretin.",
+      subtitle: "İçerik uzmanlığınızı kanıtlamalıdır. Karar verici profilinizi incelediğinde 'Bu ekip işi gerçekten biliyor' demelidir.",
       types: [
-        { title: "Uzmanlık & Düşünce Liderliği", desc: "Sektörel derinliği ve metodolojinizi kanıtlayan otorite içerikleri." },
-        { title: "Vaka Çalışmaları (Case Studies)", desc: "Gerçek B2B müşterilerde elde edilen somut ROI ve dönüşüm verileri." },
+        { title: "Uzmanlık & Düşünce Liderliği", desc: "Sektör dinamiklerine hakimiyetinizi gösteren derinlikli analizler." },
+        { title: "B2B Vaka İncelemeleri", desc: "Somut müşteri dönüşümlerini ve ölçülebilir sonuçları anlatan başarı hikayeleri." },
         { title: "Rehberler ve Frameworkler", desc: "Karar vericilerin karşılaştığı engelleri çözen indirilebilir B2B kılavuzlar." },
         { title: "Kurucu & Yönetici Perspektifi", desc: "Liderlerin vizyonunu ve güven faktörünü öne çıkaran samimi paylaşımlar." },
         { title: "Problem & Çözüm Analizleri", desc: "Hedef kitlenizin bütçe harcadığı sancılı noktaların açık reçeteleri." }
       ]
     },
     adsAndAbm: {
-      tag: "SERTİFİKALI PARTNER GÜCÜ",
+      tag: "VERİ ODAKLI B2B PERFORMANS",
       title: "LinkedIn Ads + Account-Based Marketing (ABM)",
       subtitle: "Organik erişim + outbound + reklam. Bu üç alanı birbirinden bağımsız görmüyoruz.",
       intro: "Outreach ile doğrudan bağlantı kurduğumuz hedef kitleyi LinkedIn reklamlarıyla destekliyor, 10.000 kişiye rastgele reklam göstermek yerine hedefinizdeki 100-500 doğru şirkete nokta atışı yapıyoruz.",
-      badge: "Resmi LinkedIn Ads Partner",
+      badge: "B2B LinkedIn Ads Uzmanlığı",
       campaignTypesTitle: "Yönettiğimiz LinkedIn Kampanya Modelleri:",
       campaignTypes: [
         "Lead Generation Forms (Yüksek Kaliteli B2B Formlar)",
@@ -426,7 +426,7 @@ export const translations = {
         },
         {
           q: "LinkedIn Reklamlarını da yönetiyor musunuz?",
-          a: "Evet. Overseas Marketing resmi LinkedIn Ads Partneridir. Outbound outreach süreçlerinizi yüksek hedeflemeli sponsorlu reklamlar ve ABM kampanyaları ile kusursuz şekilde destekliyoruz."
+          a: "Evet. Overseas Marketing B2B LinkedIn reklam yönetimi ve ABM uzmanlığı sunar. Outbound outreach süreçlerinizi yüksek hedeflemeli sponsorlu reklamlar ve hesap bazlı kampanyalar ile kusursuz şekilde destekliyoruz."
         }
       ]
     },
@@ -442,12 +442,12 @@ export const translations = {
       title: "Hakkımızda: Global Pazarlarda B2B Büyüme Ortağınız",
       lead: "b2blinkedin.marketing, global dijital büyüme ve performans ajansı Overseas Marketing'in (overseas.marketing) LinkedIn ve Account-Based Marketing (ABM) alanında uzmanlaşmış stratejik dikey uzantısıdır.",
       p1: "Overseas Marketing'in uluslararası pazar tecrübesinden doğan bu dikey yapılanma; teknoloji, B2B SaaS, endüstriyel üretim, sağlık turizmi ve kurumsal profesyonel hizmet şirketlerinin İngiltere, DACH (Almanya, Avusturya, İsviçre), Kuzey Amerika ve Körfez pazarlarındaki en üst düzey satın alma komitelerine ve karar vericilerine doğrudan ulaşmasını sağlar.",
-      p2: "Resmi sertifikalı LinkedIn Ads Partneri altyapımız, çok kanallı soğuk temas uzmanlığımız, gelişmiş yapay zeka destekli mikro-segmentasyon algoritmalarımız ve %100 insan onaylı (human-in-the-loop) strateji kurgularımız ile şirketinizin kurumsal satış boru hattını (pipeline) öngörülebilir ve sürdürülebilir bir büyüme makinesine dönüştürüyoruz.",
+      p2: "B2B LinkedIn müşteri kazanımı altyapımız, çok kanallı soğuk temas uzmanlığımız, gelişmiş yapay zeka destekli mikro-segmentasyon algoritmalarımız ve %100 insan onaylı (human-in-the-loop) strateji kurgularımız ile şirketinizin kurumsal satış boru hattını (pipeline) öngörülebilir ve sürdürülebilir bir büyüme sistemine dönüştürüyoruz.",
       stats: [
         { val: "30+", label: "Aktif Yönetilen Ülke Pazarı" },
         { val: "350+", label: "Optimize Edilen B2B Profil" },
         { val: "%94", label: "Müşteri Memnuniyeti & Tavsiye" },
-        { val: "LinkedIn Ads", label: "Resmi Sertifikalı Partner Ajans" }
+        { val: "14-28", label: "Aylık Ortalama Nitelikli B2B Toplantı" }
       ]
     },
     modal: {
@@ -482,8 +482,8 @@ export const translations = {
       solutionsTitle: "Sektörel Çözümler",
       resourcesTitle: "Kaynaklar",
       contactTitle: "İletişim & Lokasyon",
-      address: "Levent, Büyükdere Cad. No:199, Şişli / İstanbul",
-      partnerBadgeTitle: "Resmi Sertifikalı",
+      address: "Büyükdere Cad. No:199 Levent, Şişli / İstanbul",
+      partnerBadgeTitle: "B2B Uzmanlığı",
       rights: "Tüm hakları saklıdır. Overseas Marketing iştirakidir.",
       privacy: "Gizlilik Politikası",
       terms: "Kullanım Koşulları",
@@ -510,8 +510,8 @@ export const translations = {
       cta: "Book a Strategy Call"
     },
     hero: {
-      partnerBadgeText: "Official Certified LinkedIn Ads Partner",
-      partnerSub: "Overseas Marketing Certified B2B Agency",
+      partnerBadgeText: "B2B LinkedIn Customer Acquisition Specialists",
+      partnerSub: "Overseas Marketing Enterprise B2B Growth Engine",
       positioningBadge: "B2B Customer Acquisition Channel",
       headline: "Enterprise B2B LinkedIn Marketing & Qualified Meetings",
       subheadline: "We identify the right decision-makers inside your target companies, connect with them on LinkedIn, introduce your solution and start conversations that can become real sales opportunities.",
@@ -685,7 +685,7 @@ export const translations = {
           icon: "Building2"
         },
         {
-          title: "LinkedIn Advertising (Certified Partner)",
+          title: "LinkedIn Ads & Targeted ABM",
           desc: "Support outreach campaigns and surround target buyers with ABM and retargeting ads.",
           icon: "Target"
         }
@@ -754,11 +754,11 @@ export const translations = {
       ]
     },
     adsAndAbm: {
-      tag: "CERTIFIED PARTNER POWER",
+      tag: "PRECISION B2B PERFORMANCE",
       title: "LinkedIn Ads + Account-Based Marketing (ABM)",
       subtitle: "Organic + Outbound + Paid. We connect all three into an integrated funnel.",
       intro: "LinkedIn Ads support outbound campaigns by repeatedly exposing target buyers to your brand. Instead of spending ad budget on 10,000 random impressions, we laser-target the exact 100 to 500 companies that move your revenue needle.",
-      badge: "Official LinkedIn Ads Partner",
+      badge: "B2B LinkedIn Ads Expertise",
       campaignTypesTitle: "Campaign Types We Build & Optimize:",
       campaignTypes: [
         "Lead Generation Forms (Frictionless B2B lead capture)",
@@ -917,7 +917,7 @@ export const translations = {
         },
         {
           q: "Can you manage our LinkedIn Ads too?",
-          a: "Yes. Overseas Marketing is an official certified LinkedIn Ads Partner. Paid campaigns can run independently or synergized with outbound outreach for full ABM coverage."
+          a: "Yes. Overseas Marketing provides specialized B2B LinkedIn Ads and Account-Based Marketing management. Paid campaigns can run independently or synergized with outbound outreach for full buying committee coverage."
         }
       ]
     },
@@ -933,12 +933,12 @@ export const translations = {
       title: "About Us: Your Global B2B Growth Partner",
       lead: "B2B LinkedIn Marketing by Overseas Marketing is the dedicated enterprise acquisition unit engineered for companies scaling across international markets.",
       p1: "Born from Overseas Marketing's global digital growth heritage, this specialized division empowers tech, manufacturing, SaaS, healthcare, and professional services firms to connect directly with decision-makers in the UK, Germany, Europe, the US, and the Gulf.",
-      p2: "By blending official LinkedIn Ads Partner credentials, cutting-edge AI prospecting automation, and human strategic oversight, we transform cold outreach into a predictable B2B revenue engine.",
+      p2: "By blending deep B2B account-based marketing expertise, cutting-edge AI prospecting automation, and human strategic oversight, we transform cold outreach into a predictable B2B revenue engine.",
       stats: [
         { val: "30+", label: "Target Market Geographies" },
         { val: "350+", label: "B2B Profiles Engineered" },
         { val: "94%", label: "Client Retention & Referral Rate" },
-        { val: "LinkedIn Ads", label: "Official Certified Partner Agency" }
+        { val: "14-28", label: "Avg. Qualified Meetings / Month" }
       ]
     },
     modal: {
@@ -974,7 +974,7 @@ export const translations = {
       resourcesTitle: "Resources",
       contactTitle: "Contact & Location",
       address: "Levent, Buyukdere Ave. No:199, Sisli / Istanbul",
-      partnerBadgeTitle: "Official Certified",
+      partnerBadgeTitle: "B2B Expertise",
       rights: "All rights reserved. Subsidiary of Overseas Marketing.",
       privacy: "Privacy Policy",
       terms: "Terms of Service",

@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/api/contact', async (req, res) => {
-  const { name, email, phone, company, sector, dealSize, message, source } = req.body;
+  const { name, email, phone, company, sector, dealSize, message, source, landingPage, utm_source, utm_campaign, utm_medium } = req.body;
 
   if (!name || !email) {
     return res.status(400).json({ success: false, error: 'Ad ve e-posta zorunludur.' });
@@ -42,6 +42,8 @@ app.post('/api/contact', async (req, res) => {
     '<tr><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; font-weight: bold; color: #4a5568;">Sirket Adi:</td><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; color: #1a202c;">' + (company || 'Belirtilmedi') + '</td></tr>' +
     '<tr><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; font-weight: bold; color: #4a5568;">Hedef Sektor:</td><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; color: #1a202c;">' + (sector || 'Belirtilmedi') + '</td></tr>' +
     '<tr><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; font-weight: bold; color: #4a5568;">Ortalama Anlasma Buyuklugu:</td><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; color: #0284c7; font-weight: bold;">' + (dealSize || 'Belirtilmedi') + '</td></tr>' +
+    (landingPage ? '<tr><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; font-weight: bold; color: #4a5568;">Acilis / Kaynak Sayfa:</td><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; color: #1a202c;">' + landingPage + '</td></tr>' : '') +
+    (utm_source ? '<tr><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; font-weight: bold; color: #4a5568;">UTM Kampanya:</td><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; color: #1a202c;">' + utm_source + ' / ' + (utm_medium || '') + ' / ' + (utm_campaign || '') + '</td></tr>' : '') +
     (message ? '<tr><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; font-weight: bold; color: #4a5568;">Mesaj:</td><td style="padding: 8px 12px; border-bottom: 1px solid #edf2f7; color: #1a202c;">' + message + '</td></tr>' : '') +
     '<tr><td style="padding: 8px 12px; font-weight: bold; color: #4a5568;">Form Kaynagi:</td><td style="padding: 8px 12px; color: #718096; font-size: 12px;">' + (source || 'Web Sitesi Formu') + '</td></tr>' +
     '</table>' +

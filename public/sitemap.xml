@@ -418,9 +418,270 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/b2b-karsilastirma-matrisi/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/comparisons/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/b2b-karsilastirma-matrisi/"/>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 13. Ticari Hizmet: LinkedIn Müşteri Bulma -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/linkedin-musteri-bulma/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-musteri-bulma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-lead-generation-agency/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-musteri-bulma/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/linkedin-lead-generation-agency/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-musteri-bulma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-lead-generation-agency/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-musteri-bulma/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 14. Ticari Hizmet: B2B Lead Generation -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/b2b-lead-generation/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/b2b-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/b2b-lead-generation-services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/b2b-lead-generation/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/b2b-lead-generation-services/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/b2b-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/b2b-lead-generation-services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/b2b-lead-generation/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 15. Ticari Hizmet: B2B Randevu Ayarlama -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/b2b-randevu-ayarlama/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/b2b-randevu-ayarlama/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/b2b-appointment-setting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/b2b-randevu-ayarlama/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/b2b-appointment-setting/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/b2b-randevu-ayarlama/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/b2b-appointment-setting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/b2b-randevu-ayarlama/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 16. Ticari Hizmet: İhracat Müşterisi Bulma -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/linkedin-ile-ihracat-musterisi-bulma/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-ile-ihracat-musterisi-bulma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-lead-generation-for-exporters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-ile-ihracat-musterisi-bulma/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/linkedin-lead-generation-for-exporters/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/linkedin-ile-ihracat-musterisi-bulma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/linkedin-lead-generation-for-exporters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/linkedin-ile-ihracat-musterisi-bulma/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 17. Ticari Hizmet: AI Destekli LinkedIn Outreach -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/ai-destekli-linkedin-outreach/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/ai-destekli-linkedin-outreach/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/ai-powered-linkedin-outreach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/ai-destekli-linkedin-outreach/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/ai-powered-linkedin-outreach/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/ai-destekli-linkedin-outreach/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/ai-powered-linkedin-outreach/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/ai-destekli-linkedin-outreach/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 18. Ticari Hizmet: B2B Hedef Kitle Araştırması -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/b2b-hedef-kitle-arastirmasi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/b2b-hedef-kitle-arastirmasi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/b2b-audience-research-targeting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/b2b-hedef-kitle-arastirmasi/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/b2b-audience-research-targeting/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/b2b-hedef-kitle-arastirmasi/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/b2b-audience-research-targeting/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/b2b-hedef-kitle-arastirmasi/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 19. Karar Verici: Satın Alma Müdürlerine Ulaşma -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/satinalma-mudurlerine-ulasma/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/satinalma-mudurlerine-ulasma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/reach-procurement-managers-on-linkedin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/satinalma-mudurlerine-ulasma/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/reach-procurement-managers-on-linkedin/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/satinalma-mudurlerine-ulasma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/reach-procurement-managers-on-linkedin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/satinalma-mudurlerine-ulasma/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 20. Karar Verici: CEO'lara Ulaşma -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/ceolara-ulasma/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/ceolara-ulasma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/reach-ceos-on-linkedin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/ceolara-ulasma/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/reach-ceos-on-linkedin/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/ceolara-ulasma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/reach-ceos-on-linkedin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/ceolara-ulasma/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 21. Sektör: Üretim ve Sanayi Firmaları -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/sektorler/uretim-firmalari-linkedin-pazarlama/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/sektorler/uretim-firmalari-linkedin-pazarlama/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/industries/linkedin-lead-generation-for-manufacturers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/sektorler/uretim-firmalari-linkedin-pazarlama/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/industries/linkedin-lead-generation-for-manufacturers/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/sektorler/uretim-firmalari-linkedin-pazarlama/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/industries/linkedin-lead-generation-for-manufacturers/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/sektorler/uretim-firmalari-linkedin-pazarlama/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 22. Sektör: SaaS ve Yazılım Şirketleri -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/sektorler/saas-linkedin-lead-generation/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/sektorler/saas-linkedin-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/industries/linkedin-lead-generation-for-saas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/sektorler/saas-linkedin-lead-generation/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/industries/linkedin-lead-generation-for-saas/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/sektorler/saas-linkedin-lead-generation/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/industries/linkedin-lead-generation-for-saas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/sektorler/saas-linkedin-lead-generation/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 23. Sektör: İhracat ve Dış Ticaret Firmaları -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/sektorler/ihracat-firmalari-linkedin-musteri-bulma/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/sektorler/ihracat-firmalari-linkedin-musteri-bulma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/industries/linkedin-lead-generation-for-exporters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/sektorler/ihracat-firmalari-linkedin-musteri-bulma/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/industries/linkedin-lead-generation-for-exporters/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/sektorler/ihracat-firmalari-linkedin-musteri-bulma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/industries/linkedin-lead-generation-for-exporters/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/sektorler/ihracat-firmalari-linkedin-musteri-bulma/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 24. Karşılaştırma: LinkedIn Ads vs Google Ads -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/karsilastirma/linkedin-ads-vs-google-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/karsilastirma/linkedin-ads-vs-google-ads/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/comparisons/linkedin-ads-vs-google-ads/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/karsilastirma/linkedin-ads-vs-google-ads/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/comparisons/linkedin-ads-vs-google-ads/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/karsilastirma/linkedin-ads-vs-google-ads/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/comparisons/linkedin-ads-vs-google-ads/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/karsilastirma/linkedin-ads-vs-google-ads/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 25. Karşılaştırma: LinkedIn Outreach vs Cold Email -->
+  <url>
+    <loc>https://www.b2blinkedin.marketing/karsilastirma/linkedin-outreach-vs-cold-email/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/karsilastirma/linkedin-outreach-vs-cold-email/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/comparisons/linkedin-outreach-vs-cold-email/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/karsilastirma/linkedin-outreach-vs-cold-email/"/>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.b2blinkedin.marketing/en/comparisons/linkedin-outreach-vs-cold-email/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.b2blinkedin.marketing/karsilastirma/linkedin-outreach-vs-cold-email/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.b2blinkedin.marketing/en/comparisons/linkedin-outreach-vs-cold-email/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.b2blinkedin.marketing/karsilastirma/linkedin-outreach-vs-cold-email/"/>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
 </urlset>
+

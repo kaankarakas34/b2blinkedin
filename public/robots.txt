@@ -30,5 +30,14 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
 Sitemap: https://www.b2blinkedin.marketing/sitemap.xml
 

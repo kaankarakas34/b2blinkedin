@@ -23,11 +23,21 @@ export const ContactPage = ({ lang, t, onOpenModal, onNavigate }) => {
     setIsSubmitting(true);
 
     try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const utmData = {
+        utm_source: urlParams.get('utm_source') || '',
+        utm_medium: urlParams.get('utm_medium') || '',
+        utm_campaign: urlParams.get('utm_campaign') || '',
+        utm_content: urlParams.get('utm_content') || '',
+        landingPage: window.location.pathname + window.location.search
+      };
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...pageFormData,
+          ...utmData,
           source: 'İletişim Sayfası Doğrudan Formu'
         })
       });
@@ -113,9 +123,11 @@ export const ContactPage = ({ lang, t, onOpenModal, onNavigate }) => {
               </div>
 
               <div className="p-4 rounded-2xl bg-[#0E151F] text-white flex items-center gap-3">
-                <img src="/linkedin_ads_partner.png" alt="Partner" className="h-7 w-auto block" />
+                <div className="p-2 rounded-xl bg-sky-500/20">
+                  <ShieldCheck className="w-5 h-5 text-sky-400" />
+                </div>
                 <div className="text-xs">
-                  <span className="font-bold block text-sky-400">Resmi LinkedIn Ads Partneri</span>
+                  <span className="font-bold block text-sky-400">{isTr ? 'B2B Müşteri Kazanım Uzmanlığı' : 'B2B Pipeline Specialization'}</span>
                   <span className="text-[10px] text-slate-300">Overseas Marketing</span>
                 </div>
               </div>

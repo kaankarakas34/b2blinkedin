@@ -23,20 +23,14 @@ export const Footer = ({ t, lang = 'tr', onOpenModal, onNavigate }) => {
               {t.footer.brandDesc}
             </p>
 
-            {/* Official Partner Badge */}
+            {/* B2B Authority Badge */}
             <div className="p-3 rounded-2xl bg-white/5 border border-white/10 inline-flex items-center gap-3">
-              <div className="bg-[#0E151F] px-2 py-1.5 rounded-xl border border-white/15">
-                <img 
-                  src="/linkedin_ads_partner.png" 
-                  alt="LinkedIn Ads Partner - Overseas Marketing" 
-                  width="300"
-                  height="134"
-                  className="h-7 w-auto object-contain block"
-                />
+              <div className="bg-sky-500/20 p-2 rounded-xl border border-sky-400/20 text-sky-400">
+                <ShieldCheck className="w-5 h-5" />
               </div>
               <div className="text-left">
                 <span className="text-xs font-bold text-sky-400 block leading-tight">
-                  {t.footer.partnerBadgeTitle} LinkedIn Ads Partner
+                  {t.footer.partnerBadgeTitle}: B2B LinkedIn Marketing
                 </span>
                 <span className="text-[10px] text-slate-400">
                   Global B2B Büyüme & Müşteri Kazanımı
@@ -115,6 +109,54 @@ export const Footer = ({ t, lang = 'tr', onOpenModal, onNavigate }) => {
             </div>
           </div>
 
+        </div>
+
+        {/* B2B Topic Cluster & Industry Navigation Matrix (SEO / Topical Authority) */}
+        <div className="pt-8 pb-6 border-t border-white/10">
+          <div className="text-[11px] font-bold text-sky-400 uppercase tracking-wider mb-3">
+            {lang === 'tr' ? 'B2B Müşteri Kazanım ve Karşılaştırma Ağımız' : 'B2B Acquisition & Strategy Matrix'}
+          </div>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-slate-300">
+            <a href={getRouteUrl('commercial-service', lang, 'linkedin-musteri-bulma')} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('commercial-service', 'linkedin-musteri-bulma'); }} className="hover:text-white transition-colors">
+              {lang === 'tr' ? 'LinkedIn Müşteri Bulma' : 'LinkedIn Lead Generation Agency'}
+            </a>
+            <span className="text-slate-600">•</span>
+            <a href={getRouteUrl('commercial-service', lang, 'b2b-lead-generation')} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('commercial-service', 'b2b-lead-generation'); }} className="hover:text-white transition-colors">
+              {lang === 'tr' ? 'B2B Lead Generation' : 'B2B Lead Generation Services'}
+            </a>
+            <span className="text-slate-600">•</span>
+            <a href={getRouteUrl('commercial-service', lang, 'b2b-randevu-ayarlama')} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('commercial-service', 'b2b-randevu-ayarlama'); }} className="hover:text-white transition-colors">
+              {lang === 'tr' ? 'B2B Randevu Ayarlama' : 'B2B Appointment Setting'}
+            </a>
+            <span className="text-slate-600">•</span>
+            <a href={getRouteUrl('commercial-service', lang, 'linkedin-ile-ihracat-musterisi-bulma')} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('commercial-service', 'linkedin-ile-ihracat-musterisi-bulma'); }} className="hover:text-white transition-colors">
+              {lang === 'tr' ? 'İhracat Müşterisi Bulma' : 'Export Lead Generation'}
+            </a>
+            <span className="text-slate-600">•</span>
+            <a href={getRouteUrl('sector', lang, 'uretim-firmalari-linkedin-pazarlama')} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('sector', 'uretim-firmalari-linkedin-pazarlama'); }} className="hover:text-white transition-colors">
+              {lang === 'tr' ? 'Üretim & Sanayi LinkedIn Pazarlama' : 'Manufacturing B2B'}
+            </a>
+            <span className="text-slate-600">•</span>
+            <a href={getRouteUrl('sector', lang, 'saas-linkedin-lead-generation')} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('sector', 'saas-linkedin-lead-generation'); }} className="hover:text-white transition-colors">
+              {lang === 'tr' ? 'B2B SaaS Lead Generation' : 'SaaS Lead Generation'}
+            </a>
+            <span className="text-slate-600">•</span>
+            <a href={getRouteUrl('role', lang, 'satinalma-mudurlerine-ulasma')} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('role', 'satinalma-mudurlerine-ulasma'); }} className="hover:text-white transition-colors">
+              {lang === 'tr' ? 'Satın Alma Müdürlerine Ulaşma' : 'Reach Procurement'}
+            </a>
+            <span className="text-slate-600">•</span>
+            <a href={getRouteUrl('role', lang, 'ceolara-ulasma')} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('role', 'ceolara-ulasma'); }} className="hover:text-white transition-colors">
+              {lang === 'tr' ? 'CEO\'lara Ulaşma' : 'Reach CEOs'}
+            </a>
+            <span className="text-slate-600">•</span>
+            <a href={getRouteUrl('comparison', lang, 'linkedin-ads-vs-google-ads')} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('comparison', 'linkedin-ads-vs-google-ads'); }} className="hover:text-white transition-colors">
+              LinkedIn Ads vs. Google Ads
+            </a>
+            <span className="text-slate-600">•</span>
+            <a href={getRouteUrl('comparison', lang, 'linkedin-outreach-vs-cold-email')} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('comparison', 'linkedin-outreach-vs-cold-email'); }} className="hover:text-white transition-colors">
+              LinkedIn Outreach vs. Cold Email
+            </a>
+          </div>
         </div>
 
         {/* Bottom Bar: Copyright & Legal */}

@@ -7,16 +7,12 @@ export const LinkedInIcon = ({ className = "w-5 h-5", fill = "#0A66C2" }) => (
 );
 
 export const LinkedInPartnerBadge = ({ className = "h-8" }) => (
-  <div className={`inline-flex items-center gap-2.5 px-3 py-1.5 rounded-xl glass-badge-linkedin shadow-sm ${className}`}>
-    <div className="bg-[#0E151F] px-2 py-1 rounded-lg flex items-center">
-      <img 
-        src="/linkedin_ads_partner.png" 
-        alt="LinkedIn Ads Partner - Overseas Marketing" 
-        className="h-5 w-auto object-contain block"
-      />
+  <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-xl glass-badge-linkedin shadow-sm ${className}`}>
+    <div className="bg-linkedin px-2 py-1 rounded-lg flex items-center text-white">
+      <LinkedInIcon className="w-4 h-4 fill-white" />
     </div>
     <div className="flex flex-col text-left">
-      <span className="text-[11px] font-bold text-linkedin leading-tight">Official Partner</span>
+      <span className="text-[11px] font-bold text-navy leading-tight">B2B LinkedIn Marketing</span>
       <span className="text-[9px] text-navy/70 leading-none">Overseas Marketing</span>
     </div>
   </div>

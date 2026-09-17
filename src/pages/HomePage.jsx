@@ -10,6 +10,7 @@ import { AdsAndABM } from '../components/AdsAndABM';
 import { MetricsAndFit } from '../components/MetricsAndFit';
 import { OnboardingAndHumanAI } from '../components/OnboardingAndHumanAI';
 import { Calculator } from '../components/Calculator';
+import { HomePillarKnowledgeSection } from '../components/HomePillarKnowledgeSection';
 import { SolutionsSection } from '../components/SolutionsSection';
 import { BlogSection } from '../components/BlogSection';
 import { AboutSection } from '../components/AboutSection';
@@ -30,6 +31,7 @@ export const HomePage = ({ lang, t, onOpenModal, onNavigate }) => {
       <MetricsAndFit t={t} onOpenModal={onOpenModal} />
       <OnboardingAndHumanAI t={t} onOpenModal={onOpenModal} />
       <Calculator t={t} onOpenModal={onOpenModal} />
+      <HomePillarKnowledgeSection lang={lang} onOpenModal={onOpenModal} onNavigate={onNavigate} />
       <SolutionsSection lang={lang} t={t} onOpenModal={onOpenModal} onNavigate={onNavigate} />
       <BlogSection lang={lang} t={t} onOpenModal={onOpenModal} onNavigate={onNavigate} />
       <AboutSection t={t} onOpenModal={onOpenModal} />

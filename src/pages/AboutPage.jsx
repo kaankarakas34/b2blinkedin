@@ -61,8 +61,8 @@ export const AboutPage = ({ lang, t, onOpenModal, onNavigate }) => {
 
             <div className="lg:col-span-5">
               <div className="glass-card-dark p-8 rounded-3xl border border-white/15 text-center flex flex-col items-center">
-                <div className="bg-[#0E151F] px-4 py-2.5 rounded-2xl border border-white/15 mb-4">
-                  <img src="/linkedin_ads_partner.png" alt="LinkedIn Ads Partner" className="h-10 w-auto block mx-auto" />
+                <div className="p-3.5 rounded-2xl bg-overseas/20 border border-overseas/30 mb-4 inline-flex items-center justify-center">
+                  <Globe2 className="w-8 h-8 text-sky-400" />
                 </div>
                 <h3 className="font-heading font-bold text-xl text-white mb-2">
                   {isTr ? 'Overseas Marketing Uzantısı' : 'Overseas Marketing Vertical'}

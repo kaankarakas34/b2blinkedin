@@ -9,6 +9,10 @@ import {
   getAbsoluteCanonicalUrl, 
   CANONICAL_HOST 
 } from './utils/routes';
+import { commercialPagesData } from './data/commercialPagesData';
+import { sectorsData } from './data/sectorsData';
+import { rolesData } from './data/rolesData';
+import { comparisonsData } from './data/comparisonsData';
 
 // Lazy-loaded Subpages for optimal mobile bundle splitting
 const OutreachPage = React.lazy(() => import('./pages/OutreachPage').then(m => ({ default: m.OutreachPage })));
@@ -22,6 +26,9 @@ const AboutPage = React.lazy(() => import('./pages/AboutPage').then(m => ({ defa
 const ContactPage = React.lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
 const PersonaPage = React.lazy(() => import('./pages/PersonaPage').then(m => ({ default: m.PersonaPage })));
 const ComparisonPage = React.lazy(() => import('./pages/ComparisonPage').then(m => ({ default: m.ComparisonPage })));
+const CommercialServicePage = React.lazy(() => import('./pages/CommercialServicePage').then(m => ({ default: m.CommercialServicePage })));
+const SectorPage = React.lazy(() => import('./pages/SectorPage').then(m => ({ default: m.SectorPage })));
+const RolePage = React.lazy(() => import('./pages/RolePage').then(m => ({ default: m.RolePage })));
 const ContactModal = React.lazy(() => import('./components/ContactModal').then(m => ({ default: m.ContactModal })));
 
 export default function App() {
@@ -30,6 +37,7 @@ export default function App() {
   const [lang, setLang] = useState(initialRoute.lang);
   const [currentPage, setCurrentPage] = useState(initialRoute.page);
   const [currentBlogSlug, setCurrentBlogSlug] = useState(initialRoute.blogSlug);
+  const [currentSubSlug, setCurrentSubSlug] = useState(initialRoute.subSlug);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Sync html lang attribute
@@ -38,10 +46,55 @@ export default function App() {
   }, [lang]);
 
   // Clean URL navigation without page reload
-  const navigate = (pageId, blogSlug = null) => {
+  const navigate = (pageId, subSlug = null) => {
+    // If navigating by direct slug string, resolve it
+    if (commercialPagesData[pageId]) {
+      setCurrentPage('commercial-service');
+      setCurrentSubSlug(pageId);
+      setCurrentBlogSlug(null);
+      const newPath = getRouteUrl('commercial-service', lang, pageId);
+      window.history.pushState({}, '', newPath);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    if (sectorsData[pageId]) {
+      setCurrentPage('sector');
+      setCurrentSubSlug(pageId);
+      setCurrentBlogSlug(null);
+      const newPath = getRouteUrl('sector', lang, pageId);
+      window.history.pushState({}, '', newPath);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    if (rolesData[pageId]) {
+      setCurrentPage('role');
+      setCurrentSubSlug(pageId);
+      setCurrentBlogSlug(null);
+      const newPath = getRouteUrl('role', lang, pageId);
+      window.history.pushState({}, '', newPath);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    if (comparisonsData[pageId]) {
+      setCurrentPage('comparison');
+      setCurrentSubSlug(pageId);
+      setCurrentBlogSlug(null);
+      const newPath = getRouteUrl('comparison', lang, pageId);
+      window.history.pushState({}, '', newPath);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    // Default handling
     setCurrentPage(pageId);
-    setCurrentBlogSlug(blogSlug);
-    const newPath = getRouteUrl(pageId, lang, blogSlug);
+    if (pageId === 'blog-detail') {
+      setCurrentBlogSlug(subSlug);
+      setCurrentSubSlug(null);
+    } else {
+      setCurrentSubSlug(subSlug);
+      if (pageId !== 'blog') setCurrentBlogSlug(null);
+    }
+    const newPath = getRouteUrl(pageId, lang, subSlug);
     window.history.pushState({}, '', newPath);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -49,7 +102,8 @@ export default function App() {
   // Language switch handler
   const handleLangChange = (newLang) => {
     setLang(newLang);
-    const newPath = getRouteUrl(currentPage, newLang, currentBlogSlug);
+    const activeSub = currentBlogSlug || currentSubSlug;
+    const newPath = getRouteUrl(currentPage, newLang, activeSub);
     window.history.pushState({}, '', newPath);
   };
 
@@ -59,6 +113,7 @@ export default function App() {
       const parsed = parseCurrentRoute();
       setCurrentPage(parsed.page);
       setCurrentBlogSlug(parsed.blogSlug);
+      setCurrentSubSlug(parsed.subSlug);
       setLang(parsed.lang);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
@@ -68,7 +123,7 @@ export default function App() {
 
     // If loaded via legacy hash link (e.g. /#outreach), rewrite immediately to canonical path
     if (initialRoute.isLegacy) {
-      const canonicalTarget = getRouteUrl(initialRoute.page, initialRoute.lang, initialRoute.blogSlug);
+      const canonicalTarget = getRouteUrl(initialRoute.page, initialRoute.lang, initialRoute.blogSlug || initialRoute.subSlug);
       window.history.replaceState({}, '', canonicalTarget);
     }
 
@@ -82,15 +137,15 @@ export default function App() {
   useEffect(() => {
     const isTr = lang === 'tr';
 
-    // Tailored high-intent metadata based on the SEO report
+    // Tailored high-intent metadata map
     const seoMetaMap = {
       home: {
         title: isTr 
-          ? 'LinkedIn B2B Pazarlama Ajansı | Overseas Marketing' 
-          : 'LinkedIn B2B Marketing Agency | Overseas Marketing',
+          ? 'B2B LinkedIn Pazarlama ve Müşteri Kazanım Ajansı | Overseas Marketing' 
+          : 'B2B LinkedIn Marketing & Customer Acquisition Agency | Overseas Marketing',
         desc: isTr 
-          ? 'LinkedIn reklam yönetimi, profil optimizasyonu ve B2B outreach hizmetleriyle doğru karar vericilere ulaşın. İşletmenize özel strateji görüşmesi planlayın.' 
-          : 'Transform LinkedIn into a predictable B2B pipeline engine. Certified LinkedIn Ads Partner specializing in AI outreach, ABM, and profile optimization.'
+          ? 'LinkedIn üzerinden B2B müşteri bulma, yapay zekâ destekli outreach, LinkedIn Ads ve profil optimizasyonu ile karar vericilerle satış toplantıları oluşturun.' 
+          : 'Transform LinkedIn into a predictable B2B pipeline engine. Specialized in AI-powered human-in-the-loop outreach, ABM ads, and executive profile optimization.'
       },
       outreach: {
         title: isTr 
@@ -102,10 +157,10 @@ export default function App() {
       },
       ads: {
         title: isTr 
-          ? 'LinkedIn Reklam Ajansı & Yönetim Hizmeti | Resmi Partner' 
-          : 'LinkedIn Ads & Account-Based Marketing (Certified Partner) | Overseas',
+          ? 'LinkedIn Reklam Ajansı & Yönetim Hizmeti | B2B LinkedIn Ads' 
+          : 'LinkedIn Ads & Account-Based Marketing Management | Overseas Marketing',
         desc: isTr 
-          ? '100-500 hedef şirkette satın alma komitelerini sponsorlu reklamlarla kuşatın. Düşük CPL, Lead Gen Formları ve resmi partner güvencesi.' 
+          ? '100-500 hedef şirkette satın alma komitelerini sponsorlu reklamlarla kuşatın. Düşük CPL, Lead Gen Formları ve ölçülebilir B2B boru hattı.' 
           : 'Surround buying committees across 100-500 named accounts. High-converting Lead Gen Forms, Thought Leader Ads, and lower enterprise CAC.'
       },
       profile: {
@@ -142,11 +197,11 @@ export default function App() {
       },
       about: {
         title: isTr 
-          ? 'Hakkımızda & Onaylı LinkedIn Partnerliği | Overseas Marketing' 
-          : 'About Us & Certified LinkedIn Partner Credentials | Overseas Marketing',
+          ? 'Hakkımızda: B2B LinkedIn Müşteri Kazanım Uzmanlığı | Overseas Marketing' 
+          : 'About Us: B2B LinkedIn Growth & Prospecting Specialists | Overseas',
         desc: isTr 
-          ? 'Overseas Marketing çatısı altında İstanbul, Londra ve Berlin merkezli küresel B2B müşteri kazanımı ve onaylı LinkedIn ajansı.' 
-          : 'Global B2B growth agency headquartered across Istanbul, London, and Berlin. Official Certified LinkedIn Ads Partner.'
+          ? 'Overseas Marketing çatısı altında İstanbul, Londra ve Berlin merkezli küresel B2B müşteri kazanımı, outreach ve LinkedIn büyüme uzmanlığı.' 
+          : 'Global B2B customer acquisition and outbound prospecting specialists under Overseas Marketing. Scalable B2B sales meetings without spam.'
       },
       contact: {
         title: isTr 
@@ -166,33 +221,56 @@ export default function App() {
       },
       comparison: {
         title: isTr
-          ? 'B2B Karar Matrisi: LinkedIn Ads vs Google Ads & Outreach vs Cold Email'
-          : 'B2B Strategy Matrix: LinkedIn Ads vs Google Ads & Outreach vs Cold Email',
+          ? (comparisonsData[currentSubSlug]?.titleTr || 'B2B Karar Matrisi: LinkedIn Ads vs Google Ads & Outreach vs Cold Email')
+          : (comparisonsData[currentSubSlug]?.titleEn || 'B2B Strategy Matrix: LinkedIn Ads vs Google Ads & Outreach vs Cold Email'),
         desc: isTr
-          ? 'B2B kanal karşılaştırmaları, maliyet analizleri ve hibrit müşteri kazanım modelleri.'
-          : 'Detailed comparative analysis of LinkedIn Ads, Google Search, cold email, and account-based marketing.'
+          ? (comparisonsData[currentSubSlug]?.descTr || 'B2B kanal karşılaştırmaları, maliyet analizleri ve hibrit müşteri kazanım modelleri.')
+          : (comparisonsData[currentSubSlug]?.descEn || 'Detailed comparative analysis of LinkedIn Ads, Google Search, cold email, and account-based marketing.')
       }
     };
 
-    if (currentPage !== 'blog-detail') {
-      const currentSeo = seoMetaMap[currentPage] || seoMetaMap.home;
-      document.title = currentSeo.title;
+    // Determine current SEO title and description
+    let activeTitle = '';
+    let activeDesc = '';
 
+    if (currentPage === 'commercial-service' && currentSubSlug && commercialPagesData[currentSubSlug]) {
+      const item = commercialPagesData[currentSubSlug];
+      activeTitle = isTr ? item.titleTr : item.titleEn;
+      activeDesc = isTr ? item.descTr : item.descEn;
+    } else if (currentPage === 'sector' && currentSubSlug && sectorsData[currentSubSlug]) {
+      const item = sectorsData[currentSubSlug];
+      activeTitle = isTr ? item.titleTr : item.titleEn;
+      activeDesc = isTr ? item.descTr : item.descEn;
+    } else if (currentPage === 'role' && currentSubSlug && rolesData[currentSubSlug]) {
+      const item = rolesData[currentSubSlug];
+      activeTitle = isTr ? item.titleTr : item.titleEn;
+      activeDesc = isTr ? item.descTr : item.descEn;
+    } else if (currentPage !== 'blog-detail') {
+      const currentSeo = seoMetaMap[currentPage] || seoMetaMap.home;
+      activeTitle = currentSeo.title;
+      activeDesc = currentSeo.desc;
+    }
+
+    if (activeTitle) {
+      document.title = activeTitle;
+    }
+    if (activeDesc) {
       let metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc) {
-        metaDesc.setAttribute('content', currentSeo.desc);
+        metaDesc.setAttribute('content', activeDesc);
       }
     }
 
     // Synchronize Canonical and Hreflang Tags with Canonical Host
-    const currentCanonicalUrl = getAbsoluteCanonicalUrl(currentPage, lang, currentBlogSlug);
+    const activeSubKey = currentBlogSlug || currentSubSlug;
+    const currentCanonicalUrl = getAbsoluteCanonicalUrl(currentPage, lang, activeSubKey);
     let canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
       canonical.setAttribute('href', currentCanonicalUrl);
     }
 
-    const trAltUrl = getAbsoluteCanonicalUrl(currentPage, 'tr', currentBlogSlug);
-    const enAltUrl = getAbsoluteCanonicalUrl(currentPage, 'en', currentBlogSlug);
+    const trAltUrl = getAbsoluteCanonicalUrl(currentPage, 'tr', activeSubKey);
+    const enAltUrl = getAbsoluteCanonicalUrl(currentPage, 'en', activeSubKey);
 
     let trAlt = document.querySelector('link[rel="alternate"][hreflang="tr"]');
     if (trAlt) trAlt.setAttribute('href', trAltUrl);
@@ -203,12 +281,48 @@ export default function App() {
     let xDefault = document.querySelector('link[rel="alternate"][hreflang="x-default"]');
     if (xDefault) xDefault.setAttribute('href', trAltUrl);
 
-  }, [currentPage, currentBlogSlug, lang]);
+  }, [currentPage, currentBlogSlug, currentSubSlug, lang]);
 
   const t = translations[lang];
 
   const renderPage = () => {
     switch (currentPage) {
+      case 'commercial-service':
+        return (
+          <CommercialServicePage 
+            slug={currentSubSlug} 
+            lang={lang} 
+            onOpenModal={() => setIsModalOpen(true)} 
+            onNavigate={navigate} 
+          />
+        );
+      case 'sector':
+        return (
+          <SectorPage 
+            slug={currentSubSlug} 
+            lang={lang} 
+            onOpenModal={() => setIsModalOpen(true)} 
+            onNavigate={navigate} 
+          />
+        );
+      case 'role':
+        return (
+          <RolePage 
+            slug={currentSubSlug} 
+            lang={lang} 
+            onOpenModal={() => setIsModalOpen(true)} 
+            onNavigate={navigate} 
+          />
+        );
+      case 'comparison':
+        return (
+          <ComparisonPage 
+            slug={currentSubSlug} 
+            lang={lang} 
+            onOpenModal={() => setIsModalOpen(true)} 
+            onNavigate={navigate} 
+          />
+        );
       case 'blog-detail':
         return (
           <BlogDetailPage 
@@ -237,8 +351,6 @@ export default function App() {
         return <ContactPage lang={lang} t={t} onOpenModal={() => setIsModalOpen(true)} onNavigate={navigate} />;
       case 'persona':
         return <PersonaPage lang={lang} t={t} onOpenModal={() => setIsModalOpen(true)} onNavigate={navigate} />;
-      case 'comparison':
-        return <ComparisonPage lang={lang} t={t} onOpenModal={() => setIsModalOpen(true)} onNavigate={navigate} />;
       case 'home':
       default:
         return <HomePage lang={lang} t={t} onOpenModal={() => setIsModalOpen(true)} onNavigate={navigate} />;
@@ -273,7 +385,7 @@ export default function App() {
         t={t} 
         lang={lang}
         onOpenModal={() => setIsModalOpen(true)} 
-        onNavigate={navigate}
+        onNavigate={navigate} 
       />
 
       {/* Interactive Booking & Strategy Call Modal (Loaded on demand) */}

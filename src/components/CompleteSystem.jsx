@@ -71,11 +71,9 @@ export const CompleteSystem = ({ t, onOpenModal, onNavigate }) => {
 
                 {isLast && (
                   <div className="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
-                    <div className="flex items-center gap-2.5 text-xs font-bold text-navy">
-                      <div className="bg-[#0E151F] px-2 py-1 rounded-lg flex items-center">
-                        <img src="/linkedin_ads_partner.png" alt="Partner" className="h-5 w-auto block" />
-                      </div>
-                      <span>Resmi LinkedIn Ads Partner Avantajı</span>
+                    <div className="flex items-center gap-2 text-xs font-bold text-navy">
+                      <Target className="w-4 h-4 text-overseas" />
+                      <span>B2B Hedefli ABM Reklam Gücü</span>
                     </div>
                     <span className="text-xs text-overseas font-semibold">Maksimum ABM Dönüşümü</span>
                   </div>

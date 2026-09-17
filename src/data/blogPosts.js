@@ -62,7 +62,7 @@ The highest-converting campaigns utilize AI for research and drafting, while hum
 LinkedIn kullanıcılarının %90'ı profillerini iş arayan bir çalışan gibi kurgular: Görev tanımları, alınan eğitimler ve geçmiş sorumluluklar. Ancak B2B bir müşteri sizin eski şirketinizde ne yaptığınızla değil, onun işletmesine nasıl para kazandıracağınızla veya zaman tasarrufu sağlayacağınızla ilgilenir.
 
 #### Landing Page Profilin 5 Temel Yapı Taşı:
-1. **Dönüşüm Odaklı Banner:** Markanızın temel değer önerisini, çözdüğü problemi ve güven unsurlarını (logolar, LinkedIn partner rozeti) içeren görsel.
+1. **Dönüşüm Odaklı Banner:** Markanızın temel değer önerisini, çözdüğü problemi ve güven unsurlarını (müşteri logoları, B2B referanslar) içeren görsel.
 2. **Değer Odaklı Headline (Başlık):** Sadece 'CEO at X' değil; '[Hedef Kitle]'ye [İstenen Sonuç]'a ulaşmasında [Yöntem] ile yardımcı oluyoruz formülü.
 3. **Sosyal Kanıtlı Featured (Öne Çıkanlar):** Vaka çalışmaları, müşteri yorumları ve doğrudan takviminize yönlendiren randevu linki.
 4. **Müşteri Hikayesi Anlatan Hakkında (About) Kısmı:** Problemi tanımlayan, metodolojinizi açıklayan ve açık bir CTA ile biten metin.
@@ -98,7 +98,7 @@ LinkedIn kullanıcılarının %90'ı profillerini iş arayan bir çalışan gibi
 
 Yıllık anlaşma değeri 50.000$ veya üzeri olan bir B2B hizmette, binlerce web sitesi ziyaretçisine ihtiyacınız yoktur. İhtiyacınız olan şey; bütçesi olan 100-300 şirketteki karar vericilerin zihninde güven inşa etmektir.
 
-#### LinkedIn Ads Partner Destekli ABM Modeli
+#### B2B LinkedIn Ads Destekli ABM Modeli
 1. **Named Account List:** CRM'inizdeki hedef 250 kurumsal şirketi LinkedIn Campaign Manager'a Matched Audience olarak aktarıyoruz.
 2. **Komite Düzeyinde Hedefleme:** Karar vericinin yanı sıra satın alma sürecine etki eden CFO, IT Direktörü ve Operasyon Liderini sponsorlu içeriklerle eğitiyoruz.
 3. **Outbound Sinerjisi:** Prospect reklamınızı görüp markanızı tanıdıktan 3 gün sonra gelen kişiselleştirilmiş LinkedIn bağlantı isteği %60 daha yüksek kabul oranına ulaşır.
@@ -134,7 +134,7 @@ When your annual customer contract value exceeds $50,000, broad advertising vani
 B2B karar vericiler aldıkları her mesajda şirketinizin kurumsal mevcudiyetini doğrulamak ister. Boş bir sayfa, düzensiz logolar veya 8 ay önce paylaşılmış bir bayram kutlaması güveni anında sıfırlar.
 
 #### Şirket Sayfasında Güven İnşa Eden Detaylar:
-- Profesyonel kurumsal kapak ve sertifika / partner rozetleri (LinkedIn Ads Partner).
+- Profesyonel kurumsal kapak ve doğrulanmış kurumsal kimlik unsurları.
 - Net ve güncel ürün / hizmet katalogları (Products sekmesi).
 - Çalışanların aktif görünürlüğü ve çalışan düşünce liderliği (Employee Advocacy).
 - Düzenli, sektörel derinlik taşıyan vaka ve başarı paylaşımları.
@@ -145,7 +145,7 @@ B2B karar vericiler aldıkları her mesajda şirketinizin kurumsal mevcudiyetini
 Before engaging in a dialogue, corporate buyers silently vet your company page. An abandoned company feed with sparse followers or sporadic holiday greetings immediately degrades trust.
 
 #### Trust-Generating Elements on Corporate LinkedIn Pages:
-- Certified Partner badges and verifiable enterprise credentials.
+- Professional corporate branding and verifiable industry case evidence.
 - Clear product catalog architecture showcasing core B2B solutions.
 - Employee advocacy showcasing the talent and expertise behind the brand.
 - Weekly thought leadership demonstrating tangible industry problem-solving.

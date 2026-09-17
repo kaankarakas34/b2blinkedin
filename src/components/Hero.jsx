@@ -43,23 +43,16 @@ export const Hero = ({ t, onOpenModal }) => {
         {/* Top Header Badge Row: LinkedIn Ads Partner + Core Positioning */}
         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-8">
           
-          {/* Official LinkedIn Ads Partner Badge (MANDATORY in Hero - High Contrast Frame) */}
+          {/* Overseas Marketing B2B Authority Badge */}
           <div className="glass-card px-3.5 py-2 rounded-2xl flex items-center gap-3 border border-white/80 shadow-clean bg-white/90">
-            <div className="bg-[#0E151F] px-2.5 py-1.5 rounded-xl flex items-center shadow-inner border border-white/15 shrink-0">
-              <img 
-                src="/linkedin_ads_partner.png" 
-                alt="LinkedIn Ads Partner - Overseas Marketing" 
-                width="300"
-                height="134"
-                decoding="async"
-                className="h-6 sm:h-7 w-auto object-contain block"
-              />
+            <div className="bg-[#0E151F] px-2.5 py-1.5 rounded-xl flex items-center shadow-inner border border-white/15 shrink-0 text-sky-400">
+              <ShieldCheck className="w-5 h-5" />
             </div>
             <div className="h-7 w-px bg-slate-200"></div>
             <div className="flex flex-col text-left">
               <span className="text-[11px] sm:text-xs font-bold text-navy flex items-center gap-1.5 leading-tight">
                 {t.hero.partnerBadgeText}
-                <ShieldCheck className="w-3.5 h-3.5 text-overseas inline" />
+                <Sparkles className="w-3.5 h-3.5 text-overseas inline" />
               </span>
               <span className="text-[10px] text-content-secondary font-medium leading-tight mt-0.5">
                 {t.hero.partnerSub}
@@ -177,12 +170,10 @@ export const Hero = ({ t, onOpenModal }) => {
                 <span>Active ICP Pipeline Engine</span>
               </div>
 
-              {/* Verified partner watermark */}
+              {/* Verified pipeline watermark */}
               <div className="absolute bottom-4 right-4 glass-card px-3 py-1.5 rounded-xl text-[11px] font-bold text-navy flex items-center gap-2 shadow-lg">
-                <div className="bg-[#0E151F] px-1.5 py-1 rounded-md flex items-center">
-                  <img src="/linkedin_ads_partner.png" alt="LinkedIn Ads Partner" width="300" height="134" decoding="async" className="h-4 sm:h-5 w-auto block" />
-                </div>
-                <span>Certified B2B Partner</span>
+                <ShieldCheck className="w-4 h-4 text-emerald-500" />
+                <span>Human-in-the-Loop AI</span>
               </div>
             </div>
 

@@ -143,7 +143,7 @@ export const BlogDetailPage = ({ slug, lang, t, onOpenModal, onNavigate }) => {
           <div className="flex items-center justify-between py-3 border-y border-slate-200">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span className="text-xs font-semibold text-navy">Doğrulanmış B2B Uzmanlığı & Resmi LinkedIn Partner Rehberi</span>
+              <span className="text-xs font-semibold text-navy">{isTr ? 'Doğrulanmış B2B Metodolojisi & Editoryal Standart' : 'Verified B2B Methodology & Editorial Standard'}</span>
             </div>
             <button
               onClick={handleShare}
